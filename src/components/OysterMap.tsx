@@ -40,6 +40,34 @@ function createPopupContent(place: OysterBar): string {
 const NYC_CENTER: [number, number] = [40.7128, -74.006];
 const DEFAULT_ZOOM = 12;
 
+const MAP_THEMES: Record<string, { url: string; attribution: string; name: string }> = {
+  'Streets': {
+    name: 'Streets',
+    url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  },
+  'Light': {
+    name: 'Light',
+    url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  },
+  'Voyager': {
+    name: 'Voyager',
+    url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  },
+  'Dark': {
+    name: 'Dark',
+    url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  },
+  'Topo': {
+    name: 'Topographic',
+    url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://opentopomap.org">OpenTopoMap</a>',
+  },
+};
+
 export default function OysterMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
@@ -50,10 +78,25 @@ export default function OysterMap() {
     const map = L.map(mapRef.current).setView(NYC_CENTER, DEFAULT_ZOOM);
     mapInstanceRef.current = map;
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    const baseLayers: L.Control.LayersObject = {};
+    const defaultKey = 'Voyager';
+    const defaultTheme = MAP_THEMES[defaultKey];
+
+    const defaultLayer = L.tileLayer(defaultTheme.url, {
       maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      attribution: defaultTheme.attribution,
     }).addTo(map);
+    baseLayers[defaultTheme.name] = defaultLayer;
+
+    Object.entries(MAP_THEMES).forEach(([key, theme]) => {
+      if (key === defaultKey) return;
+      baseLayers[theme.name] = L.tileLayer(theme.url, {
+        maxZoom: 19,
+        attribution: theme.attribution,
+      });
+    });
+
+    L.control.layers(baseLayers, undefined, { collapsed: true }).addTo(map);
 
     (oysterBars as OysterBar[]).forEach((place) => {
       const marker = L.marker(place.coordinates).addTo(map);

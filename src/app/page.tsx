@@ -13,7 +13,7 @@ const OysterMap = dynamic(() => import('@/components/OysterMap'), {
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-200">
-      <div className="absolute top-4 left-4 z-[1000] rounded-lg bg-white/95 px-4 py-2 shadow-md">
+      <div className="absolute top-[10px] left-20 z-[1000] rounded-lg bg-white/95 px-4 py-2 shadow-md">
         <h1 className="text-lg font-semibold text-slate-800">NYC Oyster Happy Hours</h1>
         <p className="text-sm text-slate-600">Click a marker for details</p>
       </div>
