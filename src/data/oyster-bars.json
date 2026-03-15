@@ -1,0 +1,416 @@
+[
+  {
+    "id": "bad-luck-bar",
+    "name": "Bad Luck Bar",
+    "address": "492 Nostrand Ave, Brooklyn, NY 11216",
+    "neighborhood": "Bedford-Stuyvesant",
+    "deal": "13 oysters + 2 happy hour drinks for $33; $4 beers; $8 wine; $10 cocktails",
+    "when": "Daily, 5-7pm",
+    "coordinates": [40.681, -73.9492]
+  },
+  {
+    "id": "justines-on-hudson",
+    "name": "Justine's On Hudson",
+    "address": "518 Hudson St, New York, NY 10014",
+    "neighborhood": "West Village",
+    "deal": "Oysters $2 each; $12 wines and cocktails",
+    "when": "Daily, 5-6:30pm",
+    "coordinates": [40.7362, -74.0065]
+  },
+  {
+    "id": "selune",
+    "name": "Selune",
+    "address": "478 Halsey St, Brooklyn, NY 11233",
+    "neighborhood": "Bedford-Stuyvesant",
+    "deal": "$1 oysters; $10 cocktails; $9 wine",
+    "when": "Mon-Fri, 5-7pm (bar only)",
+    "coordinates": [40.6889, -73.9312]
+  },
+  {
+    "id": "el-pinguino",
+    "name": "El Pingüino",
+    "address": "25 Greenpoint Ave, Brooklyn, NY 11222",
+    "neighborhood": "Greenpoint",
+    "deal": "Half-off oysters; $12 sherry; $12 martinis",
+    "when": "Daily, 4-7pm",
+    "coordinates": [40.7245, -73.9512]
+  },
+  {
+    "id": "nobody-told-me",
+    "name": "Nobody Told Me",
+    "address": "951 Amsterdam Ave, New York, NY 10025",
+    "neighborhood": "Upper West Side",
+    "deal": "$2 oysters; $5 chicken slider; $12-$14 cocktails; $12 wine; $10 beer and shot",
+    "when": "Daily, 3-6pm",
+    "coordinates": [40.7874, -73.9722]
+  },
+  {
+    "id": "fish-cheeks",
+    "name": "Fish Cheeks",
+    "address": "55 Bond St, New York, NY 10012",
+    "neighborhood": "NOHO",
+    "deal": "$12 half-dozen; $22 dozen oysters; $13 cocktails; $11 wine; $7-$9 beer",
+    "when": "Daily, 12-5pm",
+    "coordinates": [40.7282, -73.994]
+  },
+  {
+    "id": "the-mermaid-inn",
+    "name": "The Mermaid Inn",
+    "address": "227 10th Ave, New York, NY 10011",
+    "neighborhood": "Chelsea",
+    "deal": "$2 Chef's Choice oysters",
+    "when": "Daily, 4-5:30pm",
+    "coordinates": [40.7465, -74.0044]
+  },
+  {
+    "id": "cull-and-pistol",
+    "name": "Cull & Pistol",
+    "address": "75 9th Ave, Chelsea Market, New York, NY 10011",
+    "neighborhood": "Chelsea",
+    "deal": "Half-off full oyster list",
+    "when": "Mon-Fri, 4-6pm",
+    "coordinates": [40.7417, -74.0042]
+  },
+  {
+    "id": "siren-oyster-bar",
+    "name": "Siren Oyster Bar & Restaurant",
+    "address": "687 5th Ave, Brooklyn, NY 11215",
+    "neighborhood": "Park Slope",
+    "deal": "$1.50 select oysters; $12 cocktails; $5 beers; $9 well drinks",
+    "when": "Mon-Thu 5-7pm, Fri-Sun 4-6pm",
+    "coordinates": [40.6682, -73.9798]
+  },
+  {
+    "id": "otway",
+    "name": "Otway",
+    "address": "930 Fulton St, Brooklyn, NY 11238",
+    "neighborhood": "Clinton Hill",
+    "deal": "Half dozen $10, dozen $20; $2 off house cocktails; $11 wine; $6 beer",
+    "when": "Daily, 4-6pm",
+    "coordinates": [40.6893, -73.9662]
+  },
+  {
+    "id": "marseille",
+    "name": "Marseille",
+    "address": "630 9th Ave, New York, NY 10036",
+    "neighborhood": "Hell's Kitchen",
+    "deal": "$1.50 Blue Point oysters; select appetizers discounted",
+    "when": "Daily, 3:30-5:30pm",
+    "coordinates": [40.7624, -73.9912]
+  },
+  {
+    "id": "greenpoint-fish-lobster",
+    "name": "Greenpoint Fish & Lobster Co.",
+    "address": "114 Nassau Ave, Brooklyn, NY 11222",
+    "neighborhood": "Greenpoint",
+    "deal": "$2 East Coast oysters; discounted drinks",
+    "when": "Daily, 12-6pm",
+    "coordinates": [40.7248, -73.9495]
+  },
+  {
+    "id": "concord-hill",
+    "name": "Concord Hill",
+    "address": "374 Graham Ave, Brooklyn, NY 11211",
+    "neighborhood": "Williamsburg",
+    "deal": "$1 oysters; $10 house margarita, grapefruit ginger mule, house wine; $5 Narragansett; snacks $6–$15",
+    "when": "Tue-Thu, 4-7pm",
+    "coordinates": [40.7095, -73.9442]
+  },
+  {
+    "id": "sea-wolf-williamsburg",
+    "name": "Sea Wolf (Williamsburg)",
+    "address": "420 Kent Ave, Brooklyn, NY 11211",
+    "neighborhood": "Williamsburg",
+    "deal": "$1 oysters; $1 chicken wings; $1 Buffalo cauliflower; $6 Painkillers; $5 draft beer; $6 wine",
+    "when": "Daily, 4-7pm",
+    "coordinates": [40.7142, -73.9655]
+  },
+  {
+    "id": "pizzette",
+    "name": "Pizzette",
+    "address": "191 Graham Ave, Brooklyn, NY 11206",
+    "neighborhood": "Williamsburg",
+    "deal": "$1 oysters Mon all day; $1 Blue Point oysters; $4 Peroni; $6 Barbera; $8 Negroni",
+    "when": "Mon all day; Mon-Fri 5-7pm, Fri-Sat 12am-2am",
+    "coordinates": [40.714, -73.944]
+  },
+  {
+    "id": "maracuja",
+    "name": "Maracuja",
+    "address": "279 Grand St, Brooklyn, NY 11211",
+    "neighborhood": "Williamsburg",
+    "deal": "$1 Wellfleet oysters; $5 draft beer; $8 cocktails; $8 frozen; $6 wine; $18 carafe",
+    "when": "Daily, 4-7pm",
+    "coordinates": [40.7122, -73.9602]
+  },
+  {
+    "id": "wanpaku",
+    "name": "Wanpaku",
+    "address": "621 Manhattan Ave, Brooklyn, NY 11222",
+    "neighborhood": "Greenpoint",
+    "deal": "$1.50 oysters; sake and cocktails at Hidden Pearl bar",
+    "when": "Mon-Fri 5-7pm, Sat-Sun noon-7pm",
+    "coordinates": [40.728, -73.951]
+  },
+  {
+    "id": "le-gamin",
+    "name": "Le Gamin",
+    "address": "108 Franklin St, Brooklyn, NY 11222",
+    "neighborhood": "Greenpoint",
+    "deal": "$14.99 glass of wine + 3 oysters",
+    "when": "Weekdays, 4-7pm",
+    "coordinates": [40.7325, -73.958]
+  },
+  {
+    "id": "madre",
+    "name": "Madre",
+    "address": "214 Franklin St, Brooklyn, NY 11222",
+    "neighborhood": "Greenpoint",
+    "deal": "$2 oysters with pickled rhubarb mignonette; discounted olives, chicharron, croquettes; $5 beer and wine",
+    "when": "Wed-Thu, 5:30-6:30pm",
+    "coordinates": [40.7318, -73.9578]
+  },
+  {
+    "id": "st-mazie",
+    "name": "St. Mazie",
+    "address": "354 Grand St, Brooklyn, NY 11211",
+    "neighborhood": "Williamsburg",
+    "deal": "$2 oysters; $14 bubbles + 6 oysters; $6 house wine; $5 house beer",
+    "when": "Daily, 5-7pm (Wed-Sun open 5-11pm)",
+    "coordinates": [40.711, -73.9568]
+  },
+  {
+    "id": "mars",
+    "name": "Mar's",
+    "address": "34-21 34th Ave, Astoria, NY 11106",
+    "neighborhood": "Astoria",
+    "deal": "Half-dozen $15, dozen $30; $13 select cocktails; $12 tap wines",
+    "when": "Daily, 4:30-7pm",
+    "coordinates": [40.7564, -73.9215]
+  },
+  {
+    "id": "sea-wolf",
+    "name": "Sea Wolf",
+    "address": "19 Wyckoff Ave, Brooklyn, NY 11237",
+    "neighborhood": "Bushwick",
+    "deal": "$1.50 oysters; $7 beer; $7 wine; $10 painkillers & frozen drinks",
+    "when": "Daily, 4-7pm",
+    "coordinates": [40.7039, -73.9212]
+  },
+  {
+    "id": "cafe-standard",
+    "name": "Café Standard",
+    "address": "25 Cooper Sq, New York, NY 10003",
+    "neighborhood": "East Village",
+    "deal": "$14 half-dozen oysters; $12 cocktails; $10 wine; $9 sparkling; $5 beer",
+    "when": "Mon-Thu 3-5pm, all day Sunday",
+    "coordinates": [40.7295, -73.9908]
+  },
+  {
+    "id": "tinys-and-the-bar-upstairs",
+    "name": "Tiny's and the Bar Upstairs",
+    "address": "135 W Broadway, New York, NY 10013",
+    "neighborhood": "Tribeca",
+    "deal": "$2 oysters; $11 house wine; $13 sangria; $13 palomarita",
+    "when": "Daily, 4-6pm",
+    "coordinates": [40.7163, -74.0085]
+  },
+  {
+    "id": "crave-fishbar",
+    "name": "Crave Fishbar",
+    "address": "945 2nd Ave, New York, NY 10022",
+    "neighborhood": "Midtown East",
+    "deal": "$2-$3.50 oysters; discounted food and drink",
+    "when": "Daily, 5-6:30pm",
+    "coordinates": [40.7542, -73.9692]
+  },
+  {
+    "id": "the-ten-bells",
+    "name": "The Ten Bells",
+    "address": "247 Broome St, New York, NY 10002",
+    "neighborhood": "Lower East Side",
+    "deal": "$1.50 oysters; $20 carafe of wine; $9 house wines",
+    "when": "Daily, until 7pm",
+    "coordinates": [40.7151, -73.9892]
+  },
+  {
+    "id": "bar-belly",
+    "name": "Bar Belly",
+    "address": "14 Orchard St, New York, NY 10002",
+    "neighborhood": "Lower East Side",
+    "deal": "$1 oysters (max 12 per person); $6 Narragansett; $10 wine; $14 cocktails",
+    "when": "Daily, 5-7pm",
+    "coordinates": [40.7145, -73.9912]
+  },
+  {
+    "id": "the-wayland",
+    "name": "The Wayland",
+    "address": "700 E 9th St, New York, NY 10009",
+    "neighborhood": "East Village",
+    "deal": "$10 half-dozen; $18 dozen oysters; $7 oyster shooters; $10 cocktails",
+    "when": "Mon-Fri, 5-7pm",
+    "coordinates": [40.7265, -73.9812]
+  },
+  {
+    "id": "black-crescent",
+    "name": "Black Crescent",
+    "address": "76 Clinton St, New York, NY 10002",
+    "neighborhood": "Lower East Side",
+    "deal": "$2 oysters; $10 cocktails; $5 draft beer",
+    "when": "Daily, 3-7pm",
+    "coordinates": [40.7162, -73.9842]
+  },
+  {
+    "id": "essex",
+    "name": "Essex",
+    "address": "120 Essex St, New York, NY 10002",
+    "neighborhood": "Lower East Side",
+    "deal": "$1 oysters all night Thu; $1.50 other days; $9 cocktails; $8 wine; $7 beer & sangria",
+    "when": "Sun-Fri 5-7pm; Thu $1 all night",
+    "coordinates": [40.7202, -73.9882]
+  },
+  {
+    "id": "stowaway",
+    "name": "Stowaway",
+    "address": "159 Greenpoint Ave, Brooklyn, NY 11222",
+    "neighborhood": "Greenpoint",
+    "deal": "$1.50 oysters; Southern comfort food & brunch",
+    "when": "Happy hour (Wed-Sun; closed Mon-Tue)",
+    "coordinates": [40.7248, -73.9522]
+  },
+  {
+    "id": "north-fork",
+    "name": "North Fork",
+    "address": "18 Greenwich Ave, New York, NY 10011",
+    "neighborhood": "West Village",
+    "deal": "6 for $9 or 12 for $18",
+    "when": "Happy hour (check for current times)",
+    "coordinates": [40.7352, -74.0025]
+  },
+  {
+    "id": "upstate-craft-beer",
+    "name": "Upstate Craft Beer & Oyster Bar",
+    "address": "95 1st Ave, New York, NY 10003",
+    "neighborhood": "East Village",
+    "deal": "½ dozen oysters + craft beer for $13",
+    "when": "Happy hour",
+    "coordinates": [40.7292, -73.9855]
+  },
+  {
+    "id": "gertrudes",
+    "name": "Gertrude's",
+    "address": "358 Flatbush Ave, Brooklyn, NY 11238",
+    "neighborhood": "Prospect Heights",
+    "deal": "$2 oysters; Billion Oyster Project member vouchers for ½ dozen at participating spots",
+    "when": "Mon, Wed-Fri (closed Tue)",
+    "coordinates": [40.6812, -73.9722]
+  },
+  {
+    "id": "the-mermaid-macdougal",
+    "name": "The Mermaid (Macdougal)",
+    "address": "79 Macdougal St, New York, NY 10012",
+    "neighborhood": "Greenwich Village",
+    "deal": "$1.50 oysters at happy hour",
+    "when": "Happy hour (see themermaidnyc.com)",
+    "coordinates": [40.7302, -73.9992]
+  },
+  {
+    "id": "ama-raw-bar",
+    "name": "Ama Raw Bar",
+    "address": "171 W 4th St, New York, NY 10014",
+    "neighborhood": "West Village",
+    "deal": "$1.25 and $2.25 oysters; discounted cocktails",
+    "when": "Happy hour",
+    "coordinates": [40.7342, -74.0022]
+  },
+  {
+    "id": "docks",
+    "name": "Dock's",
+    "address": "633 3rd Ave, New York, NY 10017",
+    "neighborhood": "Midtown East",
+    "deal": "Happy hour oyster and drink deals",
+    "when": "Happy hour (see docksoysterbar.com)",
+    "coordinates": [40.7505, -73.9742]
+  },
+  {
+    "id": "rokc",
+    "name": "ROKC",
+    "address": "649 W 125th St, New York, NY 10027",
+    "neighborhood": "West Harlem",
+    "deal": "~$1.75 oysters; full menu",
+    "when": "Happy hour",
+    "coordinates": [40.8122, -73.9622]
+  },
+  {
+    "id": "alison",
+    "name": "Alison",
+    "address": "1858 1st Ave, New York, NY 10029",
+    "neighborhood": "East Harlem",
+    "deal": "$1.50 each, minimum 6",
+    "when": "Happy hour",
+    "coordinates": [40.7832, -73.9482]
+  },
+  {
+    "id": "crave-fishbar-uws",
+    "name": "Crave Fishbar (UWS)",
+    "address": "428 Amsterdam Ave, New York, NY 10024",
+    "neighborhood": "Upper West Side",
+    "deal": "$1.50-$2 per oyster; other food and drink HH deals",
+    "when": "Daily, 4-6pm",
+    "coordinates": [40.7852, -73.9742]
+  },
+  {
+    "id": "seamores-dumbo",
+    "name": "Seamore's (Dumbo)",
+    "address": "18 Old Fulton St, Brooklyn, NY 11201",
+    "neighborhood": "Dumbo",
+    "deal": "Half off oysters in basement bar (~$1.50)",
+    "when": "Happy hour (basement bar)",
+    "coordinates": [40.7022, -73.9892]
+  },
+  {
+    "id": "the-jeffrey",
+    "name": "The Jeffrey",
+    "address": "311 E 59th St, New York, NY 10022",
+    "neighborhood": "Midtown East",
+    "deal": "Oyster happy hour (reportedly $1; confirm current price)",
+    "when": "Happy hour",
+    "coordinates": [40.7582, -73.9672]
+  },
+  {
+    "id": "abigails",
+    "name": "Abigail's",
+    "address": "2730 Broadway, New York, NY 10025",
+    "neighborhood": "Upper West Side",
+    "deal": "12 oysters for $12 + glass of wine",
+    "when": "Happy hour",
+    "coordinates": [40.7982, -73.9682]
+  },
+  {
+    "id": "clover-club",
+    "name": "Clover Club",
+    "address": "210 Smith St, Brooklyn, NY 11201",
+    "neighborhood": "Carroll Gardens",
+    "deal": "$1 oysters; acclaimed cocktails",
+    "when": "Happy hour",
+    "coordinates": [40.6862, -73.9902]
+  },
+  {
+    "id": "grey-lady",
+    "name": "Grey Lady",
+    "address": "77 Delancey St, New York, NY 10002",
+    "neighborhood": "Lower East Side",
+    "deal": "$1 oysters; BOGO martinis Thu",
+    "when": "Daily happy hour; all day Thu & Fri",
+    "coordinates": [40.7182, -73.9902]
+  },
+  {
+    "id": "off-the-hook",
+    "name": "Off the Hook",
+    "address": "32-02 30th Ave, Astoria, NY 11102",
+    "neighborhood": "Astoria",
+    "deal": "$1 oysters during HH; $1 each all night Mondays",
+    "when": "Happy hour; Mon all night",
+    "coordinates": [40.7702, -73.9182]
+  }
+]
