@@ -17,6 +17,7 @@ interface OysterBar {
   name: string;
   address: string;
   neighborhood: string;
+  oyster?: string;
   deal: string;
   when: string;
   coordinates: [number, number];
@@ -24,13 +25,20 @@ interface OysterBar {
 
 // TravelBlog-style popup: white card, rounded corners, shadow, title + content
 function createPopupContent(place: OysterBar): string {
+  const oysterLine = place.oyster
+    ? `<div style="margin-bottom: 4px;"><strong>Oyster:</strong> ${place.oyster}</div>`
+    : '';
+  const dealLine = place.deal
+    ? `<div style="margin-bottom: 4px;"><strong>Deal:</strong> ${place.deal}</div>`
+    : '';
   return `
     <div style="max-width: 400px; padding: 16px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
       <h3 style="font-size: 18px; font-weight: bold; color: #1f2937; margin-bottom: 12px;">${place.name}</h3>
       <div style="font-size: 14px; color: #374151; line-height: 1.5;">
         <div style="margin-bottom: 6px;"><strong>${place.neighborhood}</strong></div>
         <div style="margin-bottom: 6px; color: #6b7280;">${place.address}</div>
-        <div style="margin-bottom: 4px;"><strong>Deal:</strong> ${place.deal}</div>
+        ${oysterLine}
+        ${dealLine}
         <div style="font-size: 12px; color: #6b7280;"><strong>When:</strong> ${place.when}</div>
       </div>
     </div>
