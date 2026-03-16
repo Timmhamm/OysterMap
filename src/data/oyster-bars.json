@@ -730,6 +730,36 @@
     "coordinates": [40.4405, -79.9935]
   },
   {
+    "id": "off-the-hook-warrendale",
+    "name": "Off The Hook",
+    "address": "908 Warrendale Village Dr, Warrendale, PA 15086",
+    "neighborhood": "Warrendale",
+    "oyster": "$1 East Coast; $2 West Coast",
+    "deal": "Wine-by-the-glass program; bar specials",
+    "when": "Tue-Fri 4:30-6:30pm; Tue 9-11pm (late night); Sat 11am-1pm (brunch)",
+    "coordinates": [40.6476, -80.0858]
+  },
+  {
+    "id": "luke-wholeys",
+    "name": "Luke Wholey's Wild Alaskan Grille",
+    "address": "2106 Penn Ave, Pittsburgh, PA 15222",
+    "neighborhood": "Strip District",
+    "oyster": "$2 Blue Point (call to confirm HH pricing)",
+    "deal": "Half-off select appetizers; discounted beers",
+    "when": "Tue-Thu 12-8:30pm, Fri-Sat 11am-10pm, Sun 11am-6pm",
+    "coordinates": [40.4467, -79.9866]
+  },
+  {
+    "id": "mccormick-schmicks-pgh",
+    "name": "McCormick & Schmick's",
+    "address": "301 5th Ave, Piatt Place, Pittsburgh, PA 15222",
+    "neighborhood": "Downtown",
+    "oyster": "Oysters in bar from 3pm (call to confirm HH price)",
+    "deal": "Bar bites and cocktail specials",
+    "when": "Daily, 4-6:30pm (bar and lounge only)",
+    "coordinates": [40.4408, -79.9981]
+  },
+  {
     "id": "lure-fishbar",
     "name": "Lure Fishbar",
     "address": "142 Mercer St, New York, NY 10012",
