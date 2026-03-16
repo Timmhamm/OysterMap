@@ -670,21 +670,11 @@
     "coordinates": [40.461, -79.9252]
   },
   {
-    "id": "merchant-oyster-pgh",
-    "name": "Merchant Oyster Co.",
-    "address": "4129 Butler St, Pittsburgh, PA 15201",
-    "neighborhood": "Lawrenceville",
-    "oyster": "Oyster happy hour (price not listed online)",
-    "deal": "East & West Coast oysters; lobster rolls, crab cakes; local beer, wine, cocktails",
-    "when": "Happy hour (Thu-Sun; closed Mon-Tue)",
-    "coordinates": [40.468, -79.963]
-  },
-  {
     "id": "eleven-pgh",
     "name": "Eleven",
     "address": "1150 Smallman St, Pittsburgh, PA 15222",
     "neighborhood": "Strip District",
-    "oyster": "Oyster on tavern/HH menu (price not on elevenck.com)",
+    "oyster": "$21/dozen; $42/two dozen",
     "deal": "Tavern menu at bar",
     "when": "Mon-Fri, 4:30-6pm",
     "coordinates": [40.4505, -79.9825]
@@ -694,9 +684,9 @@
     "name": "The Warren Bar and Burrow",
     "address": "245 7th St, Pittsburgh, PA 15222",
     "neighborhood": "Downtown / Cultural District",
-    "oyster": "Raw oysters (confirm price)",
+    "oyster": "Tue: $40 bottle of champagne + signature oysters",
     "deal": "Sushi, craft cocktails, wine",
-    "when": "Open daily from 4pm",
+    "when": "Open daily from 4pm; Tue oyster & champagne deal",
     "coordinates": [40.4435, -79.9965]
   },
   {
