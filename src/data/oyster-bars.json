@@ -660,6 +660,16 @@
     "coordinates": [40.7522, -73.9242]
   },
   {
+    "id": "oyster-house-philly",
+    "name": "Oyster House",
+    "address": "1516 Sansom St, Philadelphia, PA 19102",
+    "neighborhood": "Center City",
+    "oyster": "$2",
+    "deal": "Snacks; drink specials",
+    "when": "Tue-Fri, 4-6pm (bar only; no reservations)",
+    "coordinates": [39.9505, -75.1665]
+  },
+  {
     "id": "muddy-waters-pgh",
     "name": "Muddy Waters Oyster Bar",
     "address": "130 S Highland Ave, Pittsburgh, PA 15206",
@@ -718,5 +728,75 @@
     "deal": "Historic since 1870; fish sandwiches, crab cakes, clam chowder",
     "when": "Wed-Fri 11am-7pm, Sat 12-8pm (closed Sun-Tue)",
     "coordinates": [40.4405, -79.9935]
+  },
+  {
+    "id": "lure-fishbar",
+    "name": "Lure Fishbar",
+    "address": "142 Mercer St, New York, NY 10012",
+    "neighborhood": "SoHo",
+    "oyster": "~$1.50–$2 rotating East and West Coast",
+    "deal": "$10 cocktails; $8 wine; $6 beer",
+    "when": "Mon-Fri, 5-7pm",
+    "coordinates": [40.7237, -74.0001]
+  },
+  {
+    "id": "jeffreys-grocery",
+    "name": "Jeffrey's Grocery",
+    "address": "172 Waverly Pl, New York, NY 10014",
+    "neighborhood": "West Village",
+    "oyster": "~$1.50 (snack menu 4-6pm daily)",
+    "deal": "Full bar; daily specials",
+    "when": "Mon-Fri, 3:30-5:30pm",
+    "coordinates": [40.7342, -74.0027]
+  },
+  {
+    "id": "the-clam",
+    "name": "The Clam",
+    "address": "420 Hudson St, New York, NY 10014",
+    "neighborhood": "West Village",
+    "oyster": "$2",
+    "deal": "$10–$12 cocktails; $8 wine; $5 Narragansett lager",
+    "when": "Tue-Sat, 4-7pm",
+    "coordinates": [40.7308, -74.0065]
+  },
+  {
+    "id": "grand-army",
+    "name": "Grand Army",
+    "address": "336 State St, Brooklyn, NY 11217",
+    "neighborhood": "Boerum Hill",
+    "oyster": "Dozen for $25",
+    "deal": "$1 off glasses of wine and beer",
+    "when": "Mon-Thu 5-7pm; Fri 4-6pm; Sat-Sun 2-4pm",
+    "coordinates": [40.6861, -73.9903]
+  },
+  {
+    "id": "pineapple-club",
+    "name": "Pineapple Club",
+    "address": "509 E 6th St, New York, NY 10009",
+    "neighborhood": "East Village",
+    "oyster": "$1 Mondays; dozen + bottle of wine $40",
+    "deal": "Tiki cocktails; HH specials Tue-Thu 5-6:30pm, Fri 4-6pm",
+    "when": "Mon 5-11pm (oyster special); Tue-Thu 5-6:30pm; Fri 4-6pm",
+    "coordinates": [40.7243, -73.9824]
+  },
+  {
+    "id": "sanfords-astoria",
+    "name": "Sanfords",
+    "address": "30-13 Broadway, Astoria, NY 11106",
+    "neighborhood": "Astoria",
+    "oyster": "$1 (whisky bar)",
+    "deal": "$6 wines; $6 select bourbons/whiskeys",
+    "when": "Daily 4-7pm (whisky bar); Mon-Fri extended to 8pm",
+    "coordinates": [40.7726, -73.9297]
+  },
+  {
+    "id": "brooklyn-crab",
+    "name": "Brooklyn Crab",
+    "address": "24 Reed St, Brooklyn, NY 11231",
+    "neighborhood": "Red Hook",
+    "oyster": "$1 (bar area only)",
+    "deal": "$5 beers; $8 margaritas; $3 off cocktails; $10 peel-and-eat shrimp",
+    "when": "Wed-Fri, 4-6pm (bar area only)",
+    "coordinates": [40.6754, -74.0165]
   }
 ]
