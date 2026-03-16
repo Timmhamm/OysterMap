@@ -664,9 +664,9 @@
     "name": "Muddy Waters Oyster Bar",
     "address": "130 S Highland Ave, Pittsburgh, PA 15206",
     "neighborhood": "East Liberty",
-    "oyster": "$1.50 East Coast; $2.50 West Coast",
-    "deal": "$6 cocktails (Don Wayne & Hurricane); $8 boilermakers; $10-$20 off champagne & bubbles",
-    "when": "Tue-Fri, 4:30-6:30pm",
+    "oyster": "HH: White Stone $10/half-dozen; East & West Coast $15/half-dozen (~$2.50 ea)",
+    "deal": "$7 Don Wayne & Hurricane; $8 boilermakers; $10–$20 off bottles of bubbles; bites $5–$12",
+    "when": "Tue-Fri, 4:30-6:30pm (bar & dining room)",
     "coordinates": [40.461, -79.9252]
   },
   {
@@ -684,9 +684,49 @@
     "name": "Eleven",
     "address": "1150 Smallman St, Pittsburgh, PA 15222",
     "neighborhood": "Strip District",
-    "oyster": "Oyster happy hour (confirm price at elevenck.com)",
+    "oyster": "Oyster on tavern/HH menu (price not on elevenck.com)",
     "deal": "Tavern menu at bar",
-    "when": "Happy hour at bar",
+    "when": "Mon-Fri, 4:30-6pm",
     "coordinates": [40.4505, -79.9825]
+  },
+  {
+    "id": "the-warren-pgh",
+    "name": "The Warren Bar and Burrow",
+    "address": "245 7th St, Pittsburgh, PA 15222",
+    "neighborhood": "Downtown / Cultural District",
+    "oyster": "Raw oysters (confirm price)",
+    "deal": "Sushi, craft cocktails, wine",
+    "when": "Open daily from 4pm",
+    "coordinates": [40.4435, -79.9965]
+  },
+  {
+    "id": "penn-ave-fish-pgh",
+    "name": "Penn Avenue Fish Company",
+    "address": "2208 Penn Ave, Pittsburgh, PA 15222",
+    "neighborhood": "Strip District",
+    "oyster": "$1",
+    "deal": "BYOB; seafood market, sandwiches, sushi",
+    "when": "Wed-Sat, 3-5pm",
+    "coordinates": [40.4525, -79.9765]
+  },
+  {
+    "id": "gandy-dancer-pgh",
+    "name": "Gandy Dancer Saloon",
+    "address": "100 W Station Square Dr, Pittsburgh, PA 15219",
+    "neighborhood": "Station Square",
+    "oyster": "$9 for 3 East Coast oysters on half shell",
+    "deal": "$8 cocktails; $5 well spirits; $11 wine; $5.25 drafts; other HH bites $9–$16",
+    "when": "Mon-Fri, 3:30-6:30pm (bar/lounge & patio only)",
+    "coordinates": [40.4345, -80.0235]
+  },
+  {
+    "id": "original-oyster-house-pgh",
+    "name": "The Original Oyster House",
+    "address": "20 Market Square, Pittsburgh, PA 15222",
+    "neighborhood": "Downtown / Market Square",
+    "oyster": "Shooters: 3 for $10.99, 6 for $17.99; breaded $2.99 each; lightly breaded $10.99",
+    "deal": "Historic since 1870; fish sandwiches, crab cakes, clam chowder",
+    "when": "Wed-Fri 11am-7pm, Sat 12-8pm (closed Sun-Tue)",
+    "coordinates": [40.4405, -79.9935]
   }
 ]
