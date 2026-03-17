@@ -34,7 +34,7 @@
     "name": "El Pingüino",
     "address": "25 Greenpoint Ave, Brooklyn, NY 11222",
     "neighborhood": "Greenpoint",
-    "oyster": "Half-off",
+    "oyster": "$2 (half-off)",
     "deal": "$12 sherry; $12 martinis",
     "when": "Daily, 4-7pm",
     "coordinates": [40.7245, -73.9512]
@@ -74,7 +74,7 @@
     "name": "Cull & Pistol",
     "address": "75 9th Ave, Chelsea Market, New York, NY 10011",
     "neighborhood": "Chelsea",
-    "oyster": "Half-off full list",
+    "oyster": "Half-off full list (~$1.75 ea)",
     "deal": "",
     "when": "Mon-Fri, 4-6pm",
     "coordinates": [40.7417, -74.0042]
@@ -650,24 +650,104 @@
     "coordinates": [40.7442, -73.9542]
   },
   {
-    "id": "dive-bar-lic",
-    "name": "Dive Bar LIC",
-    "address": "33-10 36th Ave, Long Island City, NY 11106",
-    "neighborhood": "Long Island City",
-    "oyster": "Grilled (garlic butter, parmesan) — price varies",
-    "deal": "$5 shots/beer, $6 wine; $9 burgers/wings; half-price apps Wed",
-    "when": "Mon-Thu 5-8pm",
-    "coordinates": [40.7522, -73.9242]
-  },
-  {
     "id": "oyster-house-philly",
     "name": "Oyster House",
     "address": "1516 Sansom St, Philadelphia, PA 19102",
     "neighborhood": "Center City",
     "oyster": "$2",
-    "deal": "Snacks; drink specials",
-    "when": "Tue-Fri, 4-6pm (bar only; no reservations)",
+    "deal": "$5 oyster shooters; $7 punch",
+    "when": "Tue-Fri, 4-6pm (bar only)",
     "coordinates": [39.9505, -75.1665]
+  },
+  {
+    "id": "pearl-and-mary-philly",
+    "name": "Pearl & Mary",
+    "address": "114 S 13th St, Philadelphia, PA 19107",
+    "neighborhood": "Midtown Village",
+    "oyster": "$2",
+    "deal": "$1 clams casino; $7 crudo; $4 fries; $7 gimlet; $6 wine",
+    "when": "Daily, 4-7pm (bar & raw bar only)",
+    "coordinates": [39.9497, -75.1622]
+  },
+  {
+    "id": "bloomsday-cafe-philly",
+    "name": "Bloomsday Cafe",
+    "address": "414 S 2nd St, Philadelphia, PA 19147",
+    "neighborhood": "Society Hill",
+    "oyster": "$1.50",
+    "deal": "$16 tinned fish & sherry; $6 smash burger",
+    "when": "Wed-Fri, 5-6pm",
+    "coordinates": [39.9441, -75.1432]
+  },
+  {
+    "id": "pj-clarkes-philly",
+    "name": "P.J. Clarke's",
+    "address": "601 Walnut St, Philadelphia, PA 19106",
+    "neighborhood": "Washington Square West",
+    "oyster": "$6 half-dozen; $12 dozen",
+    "deal": "",
+    "when": "Weekdays, 5-7pm (bar & lounge)",
+    "coordinates": [39.9482, -75.1522]
+  },
+  {
+    "id": "kensington-quarters-philly",
+    "name": "Kensington Quarters",
+    "address": "1310 Frankford Ave, Philadelphia, PA 19125",
+    "neighborhood": "Fishtown",
+    "oyster": "$2",
+    "deal": "$8 wine of the day; sangria",
+    "when": "Mon-Fri & Sun, 5-6:30pm",
+    "coordinates": [39.9758, -75.1302]
+  },
+  {
+    "id": "wilder-philly",
+    "name": "Wilder",
+    "address": "2009 Sansom St, Philadelphia, PA 19103",
+    "neighborhood": "Center City",
+    "oyster": "$2",
+    "deal": "$8 vinho verde; $9 rum cocktail",
+    "when": "Mon-Fri, 4:30-6:30pm",
+    "coordinates": [39.9512, -75.1735]
+  },
+  {
+    "id": "royal-boucherie-philly",
+    "name": "Royal Boucherie",
+    "address": "52 S 2nd St, Philadelphia, PA 19106",
+    "neighborhood": "Old City",
+    "oyster": "$12 half-dozen ($15 with sparkling wine)",
+    "deal": "",
+    "when": "Weekdays, 4-6pm",
+    "coordinates": [39.9494, -75.1438]
+  },
+  {
+    "id": "devon-seafood-philly",
+    "name": "Devon Seafood Grill",
+    "address": "225 S 18th St, Philadelphia, PA 19103",
+    "neighborhood": "Rittenhouse",
+    "oyster": "$15 half-dozen",
+    "deal": "$5 beer; $8 wine; $11 cocktails",
+    "when": "Mon-Thu, 4-6:30pm",
+    "coordinates": [39.9496, -75.1742]
+  },
+  {
+    "id": "the-wayward-philly",
+    "name": "The Wayward",
+    "address": "1170 Ludlow St, Philadelphia, PA 19107",
+    "neighborhood": "Center City",
+    "oyster": "$14 half-dozen",
+    "deal": "Salmon rillettes; gin cocktails",
+    "when": "Weekdays, 5-7pm (bar & lounge)",
+    "coordinates": [39.9513, -75.1558]
+  },
+  {
+    "id": "ember-and-ash-philly",
+    "name": "Ember & Ash",
+    "address": "1520 E Passyunk Ave, Philadelphia, PA 19147",
+    "neighborhood": "East Passyunk",
+    "oyster": "$10 half-dozen",
+    "deal": "$1 off draft beer; $2 off wine by the glass; $6 prosecco",
+    "when": "Mon-Fri, 5-7pm",
+    "coordinates": [39.9342, -75.1682]
   },
   {
     "id": "muddy-waters-pgh",

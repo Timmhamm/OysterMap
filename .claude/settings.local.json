@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.theinfatuation.com)",
+      "WebFetch(domain:www.timeout.com)",
+      "WebFetch(domain:www.insidehook.com)",
+      "WebFetch(domain:secretnyc.co)",
+      "WebFetch(domain:www.foodsofny.com)",
+      "WebFetch(domain:nygroove.nyc)",
+      "WebFetch(domain:happyhoursmenus.com)",
+      "WebFetch(domain:www.lurefishbar.com)",
+      "WebFetch(domain:happy-hour.nyc)",
+      "WebFetch(domain:www.theclamnyc.com)",
+      "WebFetch(domain:www.jeffreysgrocery.com)",
+      "WebFetch(domain:www.grandarmybar.com)",
+      "WebFetch(domain:www.pineappleclub.com)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:goodfoodpittsburgh.com)",
+      "WebFetch(domain:www.visitpittsburgh.com)",
+      "WebFetch(domain:www.yelp.com)",
+      "WebFetch(domain:www.lukewholey.com)",
+      "WebFetch(domain:www.offthehookfish.com)",
+      "WebFetch(domain:www.pittsburghbeautiful.com)",
+      "WebFetch(domain:www.phillymag.com)",
+      "WebFetch(domain:www.divebarlic.com)",
+      "WebFetch(domain:www.pinguinogreenpoint.com)",
+      "WebFetch(domain:www.cullandpistol.com)",
+      "WebFetch(domain:www.chelseamarket.com)"
+    ]
+  }
+}
