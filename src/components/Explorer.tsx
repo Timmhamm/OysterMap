@@ -186,6 +186,14 @@ export default function Explorer() {
         </div>
 
         <footer className="hidden shrink-0 border-t border-[var(--line)] px-5 py-3 text-[11.5px] leading-snug text-[var(--muted)] md:block">
+          <div className="mb-1.5 flex items-center gap-4 text-[var(--fg-soft)]">
+            <span>
+              <span className="legend-dot bg-[var(--live)]" /> On now
+            </span>
+            <span>
+              <span className="legend-dot bg-[var(--pin)]" /> Happy hour later
+            </span>
+          </div>
           Deals refreshed Oct 2026. Hours change — confirm before you go.
         </footer>
       </aside>

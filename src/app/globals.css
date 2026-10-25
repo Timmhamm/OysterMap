@@ -17,6 +17,7 @@
   --live: #1f9d6b;
   --soon: #b7791f;
   --pearl: #ffffff;
+  --pin: #0f5f58;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +36,7 @@
     --live: #4fd69c;
     --soon: #e6b35a;
     --pearl: #ecefe9;
+    --pin: #2e6b64;
   }
 }
 
@@ -97,14 +99,16 @@ body {
   }
 }
 
-/* Map pins: a pearl in a shell-colored ring. Live spots glow. */
+/* Map pins: a pearl in a shell-colored ring. Green means happy hour is on now;
+   the selected pin inverts to a pearl with a thick ring and shows its name. */
 .pin {
+  position: relative;
   width: 28px;
   height: 28px;
   display: grid;
   place-items: center;
   border-radius: 999px;
-  background: var(--accent);
+  background: var(--pin);
   border: 2.5px solid var(--pearl);
   box-shadow: 0 4px 12px rgba(6, 20, 18, 0.35);
   transition: transform 0.2s ease;
@@ -123,10 +127,49 @@ body {
   animation: ring 2.2s ease-out infinite;
 }
 .pin--selected {
-  transform: scale(1.25);
+  background: var(--pearl);
+  border: 5px solid var(--accent);
+  transform: scale(1.3);
 }
-.leaflet-marker-icon:hover .pin {
+.pin--selected.pin--live {
+  border-color: var(--live);
+}
+.pin--selected span {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+}
+.pin--selected.pin--live span {
+  background: var(--live);
+}
+.pin-label {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.77);
+  transform-origin: top center;
+  white-space: nowrap;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--fg);
+  color: var(--bg);
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(6, 20, 18, 0.3);
+  pointer-events: none;
+}
+.leaflet-marker-icon:hover .pin:not(.pin--selected) {
   transform: scale(1.15);
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 1.5px solid var(--pearl);
+  box-shadow: 0 0 0 1px var(--line-strong);
+  vertical-align: -1px;
 }
 
 .leaflet-control-zoom {

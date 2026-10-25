@@ -20,12 +20,15 @@ function basemap(dark: boolean): L.LayerGroup {
   ]);
 }
 
+const escapeHtml = (text: string) =>
+  text.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
 function pinIcon(bar: OysterBar, selected: boolean): L.DivIcon {
   const live = happyHourStatus(bar).kind === 'now';
   const classes = ['pin', live && 'pin--live', selected && 'pin--selected'].filter(Boolean).join(' ');
   return L.divIcon({
     className: '',
-    html: `<div class="${classes}"><span></span></div>`,
+    html: `<div class="${classes}"><span></span>${selected ? `<b class="pin-label">${escapeHtml(bar.name)}</b>` : ''}</div>`,
     iconSize: [28, 28],
     iconAnchor: [14, 14],
   });
