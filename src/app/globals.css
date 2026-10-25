@@ -3,11 +3,170 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --bg: #f4f1ea;
+  --surface: #ffffff;
+  --panel: rgba(250, 248, 243, 0.86);
+  --fg: #12221f;
+  --fg-soft: #33443f;
+  --muted: #6b7a75;
+  --line: rgba(18, 34, 31, 0.09);
+  --line-strong: rgba(18, 34, 31, 0.2);
+  --chip: rgba(18, 34, 31, 0.06);
+  --accent: #0f5f58;
+  --on-accent: #f4f1ea;
+  --live: #1f9d6b;
+  --soon: #b7791f;
+  --pearl: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1417;
+    --surface: #13201f;
+    --panel: rgba(14, 24, 25, 0.84);
+    --fg: #ecefe9;
+    --fg-soft: #c3cbc6;
+    --muted: #8a9893;
+    --line: rgba(236, 239, 233, 0.08);
+    --line-strong: rgba(236, 239, 233, 0.2);
+    --chip: rgba(236, 239, 233, 0.07);
+    --accent: #7fd1c3;
+    --on-accent: #0b1417;
+    --live: #4fd69c;
+    --soon: #e6b35a;
+    --pearl: #ecefe9;
+  }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--fg);
+  background: var(--bg);
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+@layer components {
+  .panel {
+    background: var(--panel);
+    backdrop-filter: blur(20px) saturate(1.4);
+    -webkit-backdrop-filter: blur(20px) saturate(1.4);
+    border: 1px solid var(--line);
+    box-shadow: 0 24px 60px -20px rgba(6, 20, 18, 0.35);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+  .card:hover {
+    border-color: var(--line-strong);
+  }
+  .card--selected {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 999px;
+    padding: 4px 9px;
+    font-size: 11.5px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .badge--live {
+    color: var(--live);
+    background: color-mix(in srgb, var(--live) 14%, transparent);
+  }
+  .badge--soon {
+    color: var(--soon);
+    background: color-mix(in srgb, var(--soon) 14%, transparent);
+  }
+
+  .live-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: currentColor;
+    animation: pulse 1.8s ease-out infinite;
+  }
+}
+
+/* Map pins: a pearl in a shell-colored ring. Live spots glow. */
+.pin {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--accent);
+  border: 2.5px solid var(--pearl);
+  box-shadow: 0 4px 12px rgba(6, 20, 18, 0.35);
+  transition: transform 0.2s ease;
+  transform: scale(0.82);
+}
+.pin span {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--pearl);
+}
+.pin--live {
+  background: var(--live);
+  transform: scale(0.95);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--live) 60%, transparent), 0 4px 12px rgba(6, 20, 18, 0.35);
+  animation: ring 2.2s ease-out infinite;
+}
+.pin--selected {
+  transform: scale(1.25);
+}
+.leaflet-marker-icon:hover .pin {
+  transform: scale(1.15);
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 8px 24px -8px rgba(6, 20, 18, 0.35) !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+}
+.leaflet-control-zoom a {
+  background: var(--panel) !important;
+  color: var(--fg) !important;
+  backdrop-filter: blur(12px);
+  border-color: var(--line) !important;
+}
+.leaflet-container {
+  background: var(--bg);
+  font-family: inherit;
+}
+.leaflet-control-attribution {
+  background: var(--panel) !important;
+  color: var(--muted) !important;
+}
+.leaflet-control-attribution a {
+  color: var(--muted) !important;
+}
+
+@media (max-width: 767px) {
+  .leaflet-bottom.leaflet-right {
+    display: none;
+  }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 currentColor; }
+  70% { box-shadow: 0 0 0 6px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+@keyframes ring {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--live) 55%, transparent), 0 4px 12px rgba(6, 20, 18, 0.35); }
+  80% { box-shadow: 0 0 0 14px transparent, 0 4px 12px rgba(6, 20, 18, 0.35); }
+  100% { box-shadow: 0 0 0 0 transparent, 0 4px 12px rgba(6, 20, 18, 0.35); }
 }

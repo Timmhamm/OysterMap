@@ -2,126 +2,115 @@
 
 import { useEffect, useRef } from 'react';
 import L from 'leaflet';
-import oysterBars from '@/data/oyster-bars.json';
+import { happyHourStatus, type OysterBar } from '@/lib/bars';
 
-// Fix for default markers in Leaflet with Next.js
-delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: unknown })._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-});
-
-interface OysterBar {
-  id: string;
-  name: string;
-  address: string;
-  neighborhood: string;
-  oyster?: string;
-  deal: string;
-  when: string;
-  coordinates: [number, number];
-}
-
-// TravelBlog-style popup: white card, rounded corners, shadow, title + content
-function createPopupContent(place: OysterBar): string {
-  const oysterLine = place.oyster
-    ? `<div style="margin-bottom: 4px;"><strong>Oyster:</strong> ${place.oyster}</div>`
-    : '';
-  const dealLine = place.deal
-    ? `<div style="margin-bottom: 4px;"><strong>Deal:</strong> ${place.deal}</div>`
-    : '';
-  return `
-    <div style="max-width: 400px; padding: 16px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-      <h3 style="font-size: 18px; font-weight: bold; color: #1f2937; margin-bottom: 12px;">${place.name}</h3>
-      <div style="font-size: 14px; color: #374151; line-height: 1.5;">
-        <div style="margin-bottom: 6px;"><strong>${place.neighborhood}</strong></div>
-        <div style="margin-bottom: 6px; color: #6b7280;">${place.address}</div>
-        ${oysterLine}
-        ${dealLine}
-        <div style="font-size: 12px; color: #6b7280;"><strong>When:</strong> ${place.when}</div>
-      </div>
-    </div>
-  `;
-}
-
-const NYC_CENTER: [number, number] = [40.7128, -74.006];
-const DEFAULT_ZOOM = 12;
-
-const MAP_THEMES: Record<string, { url: string; attribution: string; name: string }> = {
-  'Streets': {
-    name: 'Streets',
-    url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  },
-  'Light': {
-    name: 'Light',
-    url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  },
-  'Voyager': {
-    name: 'Voyager',
-    url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  },
-  'Dark': {
-    name: 'Dark',
-    url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  },
-  'Topo': {
-    name: 'Topographic',
-    url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://opentopomap.org">OpenTopoMap</a>',
-  },
+// Esri's gray canvas basemaps are keyless (CARTO's now return an "API key required" tile).
+const esri = (layer: string) => `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/${layer}/MapServer/tile/{z}/{y}/{x}`;
+const TILES = {
+  light: [esri('World_Light_Gray_Base'), esri('World_Light_Gray_Reference')],
+  dark: [esri('World_Dark_Gray_Base'), esri('World_Dark_Gray_Reference')],
 };
+const ATTRIBUTION = 'Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors';
 
-export default function OysterMap() {
+function basemap(dark: boolean): L.LayerGroup {
+  const [base, labels] = dark ? TILES.dark : TILES.light;
+  return L.layerGroup([
+    L.tileLayer(base, { maxZoom: 16, attribution: ATTRIBUTION }),
+    L.tileLayer(labels, { maxZoom: 16 }),
+  ]);
+}
+
+function pinIcon(bar: OysterBar, selected: boolean): L.DivIcon {
+  const live = happyHourStatus(bar).kind === 'now';
+  const classes = ['pin', live && 'pin--live', selected && 'pin--selected'].filter(Boolean).join(' ');
+  return L.divIcon({
+    className: '',
+    html: `<div class="${classes}"><span></span></div>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14],
+  });
+}
+
+interface Props {
+  bars: OysterBar[];
+  selectedId: string | null;
+  center: [number, number];
+  zoom: number;
+  onSelect: (id: string) => void;
+}
+
+export default function OysterMap({ bars, selectedId, center, zoom, onSelect }: Props) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
+  const markersRef = useRef<Map<string, L.Marker>>(new Map());
+  const onSelectRef = useRef(onSelect);
+  onSelectRef.current = onSelect;
 
   useEffect(() => {
     if (!mapRef.current || mapInstanceRef.current) return;
 
-    const map = L.map(mapRef.current).setView(NYC_CENTER, DEFAULT_ZOOM);
+    const map = L.map(mapRef.current, { zoomControl: false, maxZoom: 16 }).setView(center, zoom);
     mapInstanceRef.current = map;
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    const baseLayers: L.Control.LayersObject = {};
-    const defaultKey = 'Voyager';
-    const defaultTheme = MAP_THEMES[defaultKey];
-
-    const defaultLayer = L.tileLayer(defaultTheme.url, {
-      maxZoom: 19,
-      attribution: defaultTheme.attribution,
-    }).addTo(map);
-    baseLayers[defaultTheme.name] = defaultLayer;
-
-    Object.entries(MAP_THEMES).forEach(([key, theme]) => {
-      if (key === defaultKey) return;
-      baseLayers[theme.name] = L.tileLayer(theme.url, {
-        maxZoom: 19,
-        attribution: theme.attribution,
-      });
-    });
-
-    L.control.layers(baseLayers, undefined, { collapsed: true }).addTo(map);
-
-    (oysterBars as OysterBar[]).forEach((place) => {
-      const marker = L.marker(place.coordinates).addTo(map);
-      marker.bindPopup(createPopupContent(place));
-    });
+    const scheme = window.matchMedia('(prefers-color-scheme: dark)');
+    let tiles = basemap(scheme.matches).addTo(map);
+    const swapTiles = (e: MediaQueryListEvent) => {
+      tiles.remove();
+      tiles = basemap(e.matches).addTo(map);
+    };
+    scheme.addEventListener('change', swapTiles);
 
     return () => {
-      if (mapInstanceRef.current) {
-        mapInstanceRef.current.remove();
-        mapInstanceRef.current = null;
-      }
+      scheme.removeEventListener('change', swapTiles);
+      map.remove();
+      mapInstanceRef.current = null;
+      markersRef.current.clear();
     };
+    // The map is created once; city changes are handled by the flyTo effect below.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
-    <div className="h-screen w-full">
-      <div ref={mapRef} className="h-full w-full" />
-    </div>
-  );
+  // Sync markers with the filtered list.
+  useEffect(() => {
+    const map = mapInstanceRef.current;
+    if (!map) return;
+    const markers = markersRef.current;
+    const visible = new Set(bars.map((b) => b.id));
+
+    markers.forEach((marker, id) => {
+      if (!visible.has(id)) {
+        marker.remove();
+        markers.delete(id);
+      }
+    });
+    bars.forEach((bar) => {
+      const icon = pinIcon(bar, bar.id === selectedId);
+      const existing = markers.get(bar.id);
+      if (existing) {
+        existing.setIcon(icon);
+        existing.setZIndexOffset(bar.id === selectedId ? 1000 : 0);
+        return;
+      }
+      const marker = L.marker(bar.coordinates, { icon, title: bar.name, riseOnHover: true })
+        .on('click', () => onSelectRef.current(bar.id))
+        .addTo(map);
+      markers.set(bar.id, marker);
+    });
+  }, [bars, selectedId]);
+
+  useEffect(() => {
+    mapInstanceRef.current?.flyTo(center, zoom, { duration: 0.8 });
+  }, [center, zoom]);
+
+  useEffect(() => {
+    const map = mapInstanceRef.current;
+    const bar = bars.find((b) => b.id === selectedId);
+    if (!map || !bar) return;
+    map.flyTo(bar.coordinates, Math.max(map.getZoom(), 15), { duration: 0.6 });
+    // Only re-center when the selection changes, not when filters reshuffle the list.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedId]);
+
+  return <div ref={mapRef} className="h-full w-full" />;
 }

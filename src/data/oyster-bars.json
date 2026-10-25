@@ -2,911 +2,1431 @@
   {
     "id": "bad-luck-bar",
     "name": "Bad Luck Bar",
+    "city": "nyc",
     "address": "492 Nostrand Ave, Brooklyn, NY 11216",
     "neighborhood": "Bedford-Stuyvesant",
-    "oyster": "13 + 2 HH drinks for $33",
+    "oyster": "13 oysters + 2 HH drinks for $33–$35",
     "deal": "$4 beers; $8 wine; $10 cocktails",
     "when": "Daily, 5-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.681, -73.9492]
   },
   {
     "id": "justines-on-hudson",
     "name": "Justine's On Hudson",
+    "city": "nyc",
     "address": "518 Hudson St, New York, NY 10014",
     "neighborhood": "West Village",
     "oyster": "$2 each",
     "deal": "$12 wines and cocktails",
     "when": "Daily, 5-6:30pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "17:00", "end": "18:30" }
+    ],
+    "verified": "2026-05",
     "coordinates": [40.7362, -74.0065]
   },
   {
     "id": "selune",
     "name": "Selune",
+    "city": "nyc",
     "address": "478 Halsey St, Brooklyn, NY 11233",
     "neighborhood": "Bedford-Stuyvesant",
-    "oyster": "$1",
+    "oyster": "$1 (6 min, bar only)",
     "deal": "$10 cocktails; $9 wine",
-    "when": "Mon-Fri, 5-7pm (bar only)",
+    "when": "Tue-Fri, 5-7pm (bar only)",
+    "schedule": [
+      { "days": [2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.6889, -73.9312]
   },
   {
     "id": "el-pinguino",
     "name": "El Pingüino",
+    "city": "nyc",
     "address": "25 Greenpoint Ave, Brooklyn, NY 11222",
     "neighborhood": "Greenpoint",
-    "oyster": "$2 (half-off)",
+    "oyster": "Half-off",
     "deal": "$12 sherry; $12 martinis",
     "when": "Daily, 4-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": "2026-06",
     "coordinates": [40.7245, -73.9512]
   },
   {
     "id": "nobody-told-me",
     "name": "Nobody Told Me",
+    "city": "nyc",
     "address": "951 Amsterdam Ave, New York, NY 10025",
     "neighborhood": "Upper West Side",
-    "oyster": "$2",
-    "deal": "$5 chicken slider; $12-$14 cocktails; $12 wine; $10 beer and shot",
+    "oyster": "$2 (4 min)",
+    "deal": "$7 drafts; $10 wine; $12 cocktails; $5 chicken slider",
     "when": "Daily, 3-6pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "15:00", "end": "18:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7874, -73.9722]
   },
   {
     "id": "fish-cheeks",
     "name": "Fish Cheeks",
+    "city": "nyc",
     "address": "55 Bond St, New York, NY 10012",
     "neighborhood": "NOHO",
     "oyster": "$12 half-dozen; $22 dozen",
-    "deal": "$13 cocktails; $11 wine; $7-$9 beer",
+    "deal": "$14 specialty cocktails; $11 wine; $7–$9 beer",
     "when": "Daily, 12-5pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "12:00", "end": "17:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7282, -73.994]
   },
   {
     "id": "the-mermaid-inn",
     "name": "The Mermaid Inn",
+    "city": "nyc",
     "address": "227 10th Ave, New York, NY 10011",
     "neighborhood": "Chelsea",
-    "oyster": "$2 Chef's Choice",
-    "deal": "",
-    "when": "Daily, 4-5:30pm",
+    "oyster": "$2 Chef's Choice (6 min); Mon all night",
+    "deal": "$8 draft; $10 wine; $12 cocktails",
+    "when": "Mon all night; Tue-Fri, 4:30-6pm",
+    "schedule": [
+      { "days": [1], "start": "16:30", "end": "23:59" },
+      { "days": [2, 3, 4, 5], "start": "16:30", "end": "18:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7465, -74.0044]
   },
   {
     "id": "cull-and-pistol",
     "name": "Cull & Pistol",
+    "city": "nyc",
     "address": "75 9th Ave, Chelsea Market, New York, NY 10011",
     "neighborhood": "Chelsea",
-    "oyster": "Half-off full list (~$1.75 ea)",
+    "oyster": "Half-off all 12 varieties (~$1.88 ea)",
     "deal": "",
     "when": "Mon-Fri, 4-6pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7417, -74.0042]
   },
   {
     "id": "siren-oyster-bar",
     "name": "Siren Oyster Bar & Restaurant",
+    "city": "nyc",
     "address": "687 5th Ave, Brooklyn, NY 11215",
     "neighborhood": "Park Slope",
     "oyster": "$1.50 select",
-    "deal": "$12 cocktails; $5 beers; $9 well drinks",
-    "when": "Mon-Thu 5-7pm, Fri-Sun 4-6pm",
+    "deal": "$5 beer; $12 cocktails; $12 wine",
+    "when": "Tue-Thu 5-7pm; Fri-Sun 4-6pm",
+    "schedule": [
+      { "days": [2, 3, 4], "start": "17:00", "end": "19:00" },
+      { "days": [5, 6, 0], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.6682, -73.9798]
   },
   {
     "id": "otway",
     "name": "Otway",
+    "city": "nyc",
     "address": "930 Fulton St, Brooklyn, NY 11238",
     "neighborhood": "Clinton Hill",
     "oyster": "Half dozen $10, dozen $20",
-    "deal": "$2 off house cocktails; $11 wine; $6 beer",
+    "deal": "$2 off house cocktails; $11 classics; $11 wine; $6 beer",
     "when": "Daily, 4-6pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-05",
     "coordinates": [40.6893, -73.9662]
   },
   {
     "id": "marseille",
     "name": "Marseille",
+    "city": "nyc",
     "address": "630 9th Ave, New York, NY 10036",
     "neighborhood": "Hell's Kitchen",
-    "oyster": "$1.50 Blue Point",
-    "deal": "Select appetizers discounted",
+    "oyster": "$1.50 Bluepoint",
+    "deal": "Select appetizers discounted (no drink specials)",
     "when": "Daily, 3:30-5:30pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "15:30", "end": "17:30" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7624, -73.9912]
   },
   {
     "id": "greenpoint-fish-lobster",
     "name": "Greenpoint Fish & Lobster Co.",
+    "city": "nyc",
     "address": "114 Nassau Ave, Brooklyn, NY 11222",
     "neighborhood": "Greenpoint",
     "oyster": "$2 East Coast",
     "deal": "Discounted drinks",
     "when": "Daily, 12-6pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "12:00", "end": "18:00" }
+    ],
+    "verified": "2026-05",
     "coordinates": [40.7248, -73.9495]
   },
   {
     "id": "concord-hill",
     "name": "Concord Hill",
+    "city": "nyc",
     "address": "374 Graham Ave, Brooklyn, NY 11211",
     "neighborhood": "Williamsburg",
     "oyster": "$1",
     "deal": "$10 house margarita, grapefruit ginger mule, house wine; $5 Narragansett; snacks $6–$15",
     "when": "Tue-Thu, 4-7pm",
+    "schedule": [
+      { "days": [2, 3, 4], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7095, -73.9442]
   },
   {
     "id": "sea-wolf-williamsburg",
     "name": "Sea Wolf (Williamsburg)",
+    "city": "nyc",
     "address": "420 Kent Ave, Brooklyn, NY 11211",
     "neighborhood": "Williamsburg",
     "oyster": "$1",
     "deal": "$1 chicken wings; $1 Buffalo cauliflower; $6 Painkillers; $5 draft beer; $6 wine",
     "when": "Daily, 4-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7142, -73.9655]
   },
   {
     "id": "pizzette",
     "name": "Pizzette",
+    "city": "nyc",
     "address": "191 Graham Ave, Brooklyn, NY 11206",
     "neighborhood": "Williamsburg",
     "oyster": "$1 Mon all day; $1 Blue Point at HH",
     "deal": "$4 Peroni; $6 Barbera; $8 Negroni",
     "when": "Mon all day; Mon-Fri 5-7pm, Fri-Sat 12am-2am",
+    "schedule": [
+      { "days": [1], "start": "12:00", "end": "23:59" },
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.714, -73.944]
   },
   {
     "id": "maracuja",
     "name": "Maracuja",
+    "city": "nyc",
     "address": "279 Grand St, Brooklyn, NY 11211",
     "neighborhood": "Williamsburg",
     "oyster": "$1 Wellfleet",
     "deal": "$5 draft beer; $8 cocktails; $8 frozen; $6 wine; $18 carafe",
     "when": "Daily, 4-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7122, -73.9602]
   },
   {
     "id": "wanpaku",
     "name": "Wanpaku",
+    "city": "nyc",
     "address": "621 Manhattan Ave, Brooklyn, NY 11222",
     "neighborhood": "Greenpoint",
     "oyster": "$1.50",
     "deal": "Sake and cocktails at Hidden Pearl bar",
     "when": "Mon-Fri 5-7pm, Sat-Sun noon-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" },
+      { "days": [6, 0], "start": "12:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.728, -73.951]
   },
   {
     "id": "le-gamin",
     "name": "Le Gamin",
+    "city": "nyc",
     "address": "108 Franklin St, Brooklyn, NY 11222",
     "neighborhood": "Greenpoint",
     "oyster": "$14.99 glass of wine + 3",
     "deal": "",
     "when": "Weekdays, 4-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7325, -73.958]
   },
   {
     "id": "madre",
     "name": "Madre",
+    "city": "nyc",
     "address": "214 Franklin St, Brooklyn, NY 11222",
     "neighborhood": "Greenpoint",
     "oyster": "$2 (with pickled rhubarb mignonette)",
     "deal": "Discounted olives, chicharron, croquettes; $5 beer and wine",
     "when": "Wed-Thu, 5:30-6:30pm",
+    "schedule": [
+      { "days": [3, 4], "start": "17:30", "end": "18:30" }
+    ],
+    "verified": null,
     "coordinates": [40.7318, -73.9578]
   },
   {
     "id": "st-mazie",
     "name": "St. Mazie",
+    "city": "nyc",
     "address": "354 Grand St, Brooklyn, NY 11211",
     "neighborhood": "Williamsburg",
     "oyster": "$2; $14 bubbles + 6",
     "deal": "$6 house wine; $5 house beer",
     "when": "Daily, 5-7pm (Wed-Sun open 5-11pm)",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.711, -73.9568]
   },
   {
     "id": "mars",
     "name": "Mar's",
+    "city": "nyc",
     "address": "34-21 34th Ave, Astoria, NY 11106",
     "neighborhood": "Astoria",
     "oyster": "Half-dozen $15, dozen $30",
-    "deal": "$13 select cocktails; $12 tap wines",
+    "deal": "$13 select cocktails; $15 mignonette martini; $12 tap wines",
     "when": "Daily, 4:30-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:30", "end": "19:00" }
+    ],
+    "verified": "2026-05",
     "coordinates": [40.7564, -73.9215]
   },
   {
     "id": "sea-wolf",
     "name": "Sea Wolf",
+    "city": "nyc",
     "address": "19 Wyckoff Ave, Brooklyn, NY 11237",
     "neighborhood": "Bushwick",
     "oyster": "$1.50",
-    "deal": "$7 beer; $7 wine; $10 painkillers & frozen drinks",
+    "deal": "$7 beer; $7 wine; $10 painkillers & frozen drinks; $9 snacks",
     "when": "Daily, 4-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": "2026-05",
     "coordinates": [40.7039, -73.9212]
   },
   {
     "id": "cafe-standard",
     "name": "Café Standard",
+    "city": "nyc",
     "address": "25 Cooper Sq, New York, NY 10003",
     "neighborhood": "East Village",
     "oyster": "$14 half-dozen",
     "deal": "$12 cocktails; $10 wine; $9 sparkling; $5 beer",
-    "when": "Mon-Thu 3-5pm, all day Sunday",
+    "when": "Mon-Fri, 5-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": "2026-05",
     "coordinates": [40.7295, -73.9908]
   },
   {
     "id": "tinys-and-the-bar-upstairs",
     "name": "Tiny's and the Bar Upstairs",
+    "city": "nyc",
     "address": "135 W Broadway, New York, NY 10013",
     "neighborhood": "Tribeca",
     "oyster": "$2",
-    "deal": "$11 house wine; $13 sangria; $13 palomarita",
+    "deal": "$11 house wine; $13 sangria; $13 Palomarita; $22 martini + tots",
     "when": "Daily, 4-6pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7163, -74.0085]
   },
   {
     "id": "crave-fishbar",
     "name": "Crave Fishbar",
+    "city": "nyc",
     "address": "945 2nd Ave, New York, NY 10022",
     "neighborhood": "Midtown East",
-    "oyster": "$2-$3.50",
-    "deal": "Discounted food and drink",
-    "when": "Daily, 5-6:30pm",
+    "oyster": "$1 Mon all night; $2–$3.50 other days",
+    "deal": "$10 martinis on Mondays; discounted food & drink",
+    "when": "Mon all night; daily 5-6:30pm",
+    "schedule": [
+      { "days": [1], "start": "17:00", "end": "23:59" },
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "17:00", "end": "18:30" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7542, -73.9692]
   },
   {
     "id": "the-ten-bells",
     "name": "The Ten Bells",
+    "city": "nyc",
     "address": "247 Broome St, New York, NY 10002",
     "neighborhood": "Lower East Side",
-    "oyster": "$1.50",
-    "deal": "$20 carafe of wine; $9 house wines",
-    "when": "Daily, until 7pm",
+    "oyster": "$1",
+    "deal": "$9 house wine; $22 carafes",
+    "when": "Mon-Fri 5-7pm; Sat-Sun 3-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" },
+      { "days": [6, 0], "start": "15:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7151, -73.9892]
   },
   {
     "id": "bar-belly",
     "name": "Bar Belly",
+    "city": "nyc",
     "address": "14 Orchard St, New York, NY 10002",
     "neighborhood": "Lower East Side",
     "oyster": "$1 (max 12 per person)",
-    "deal": "$6 Narragansett; $10 wine; $14 cocktails",
-    "when": "Daily, 5-7pm",
+    "deal": "$6 beer; $10 wine; $14 cocktails; $8 tots",
+    "when": "Sun-Wed 5-7pm; Thu-Sat 4-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3], "start": "17:00", "end": "19:00" },
+      { "days": [4, 5, 6], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7145, -73.9912]
   },
   {
     "id": "the-wayland",
     "name": "The Wayland",
+    "city": "nyc",
     "address": "700 E 9th St, New York, NY 10009",
     "neighborhood": "East Village",
     "oyster": "$10 half-dozen; $18 dozen; $7 shooters",
-    "deal": "$10 cocktails",
-    "when": "Mon-Fri, 5-7pm",
+    "deal": "$10 cocktails; $9 wine; $4 Tecate; $12 burger + beer",
+    "when": "Mon-Fri, 4-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7265, -73.9812]
   },
   {
     "id": "black-crescent",
     "name": "Black Crescent",
+    "city": "nyc",
     "address": "76 Clinton St, New York, NY 10002",
     "neighborhood": "Lower East Side",
     "oyster": "$2",
-    "deal": "$10 cocktails; $5 draft beer",
-    "when": "Daily, 3-7pm",
+    "deal": "$5 drafts; ~$10 cocktails",
+    "when": "Tue-Sun, 3-7pm (closed Mon)",
+    "schedule": [
+      { "days": [2, 3, 4, 5, 6, 0], "start": "15:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7162, -73.9842]
   },
   {
     "id": "essex",
     "name": "Essex",
+    "city": "nyc",
     "address": "120 Essex St, New York, NY 10002",
     "neighborhood": "Lower East Side",
-    "oyster": "$1 all night Thu; $1.50 other days",
-    "deal": "$9 cocktails; $8 wine; $7 beer & sangria",
-    "when": "Sun-Fri 5-7pm; Thu $1 all night",
+    "oyster": "$1.50 East Coast",
+    "deal": "$9 cocktails; $8 wine; $7 draft",
+    "when": "Sun-Fri, 5-7pm (bar room & outdoor)",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7202, -73.9882]
   },
   {
     "id": "stowaway",
     "name": "Stowaway",
+    "city": "nyc",
     "address": "159 Greenpoint Ave, Brooklyn, NY 11222",
     "neighborhood": "Greenpoint",
     "oyster": "$1.50",
     "deal": "Southern comfort food & brunch",
     "when": "Happy hour (Wed-Sun; closed Mon-Tue)",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7248, -73.9522]
   },
   {
     "id": "north-fork",
     "name": "North Fork",
+    "city": "nyc",
     "address": "18 Greenwich Ave, New York, NY 10011",
     "neighborhood": "West Village",
     "oyster": "6 for $9 or 12 for $18",
     "deal": "",
     "when": "Happy hour (check for current times)",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7352, -74.0025]
   },
   {
     "id": "upstate-craft-beer",
     "name": "Upstate Craft Beer & Oyster Bar",
+    "city": "nyc",
     "address": "95 1st Ave, New York, NY 10003",
     "neighborhood": "East Village",
     "oyster": "½ dozen + craft beer for $13",
     "deal": "",
     "when": "Happy hour",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7292, -73.9855]
   },
   {
     "id": "gertrudes",
     "name": "Gertrude's",
+    "city": "nyc",
     "address": "358 Flatbush Ave, Brooklyn, NY 11238",
     "neighborhood": "Prospect Heights",
     "oyster": "$2",
     "deal": "Billion Oyster Project member vouchers for ½ dozen at participating spots",
     "when": "Mon, Wed-Fri (closed Tue)",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.6812, -73.9722]
   },
   {
     "id": "the-mermaid-macdougal",
     "name": "The Mermaid (Macdougal)",
+    "city": "nyc",
     "address": "79 Macdougal St, New York, NY 10012",
     "neighborhood": "Greenwich Village",
     "oyster": "$1.50 at happy hour",
     "deal": "",
     "when": "Happy hour (see themermaidnyc.com)",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7302, -73.9992]
   },
   {
     "id": "ama-raw-bar",
     "name": "Ama Raw Bar",
+    "city": "nyc",
     "address": "171 W 4th St, New York, NY 10014",
     "neighborhood": "West Village",
-    "oyster": "$1.25 and $2.25",
-    "deal": "Discounted cocktails",
-    "when": "Happy hour",
+    "oyster": "$1.25 Barcat; $2.25 St. Simon (6–24, with food)",
+    "deal": "",
+    "when": "Mon-Fri, 5-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7342, -74.0022]
   },
   {
     "id": "docks",
     "name": "Dock's",
+    "city": "nyc",
     "address": "633 3rd Ave, New York, NY 10017",
     "neighborhood": "Midtown East",
-    "oyster": "$1.50 du jour & clams",
-    "deal": "$6 draft, $9 wine, $8 well drinks",
-    "when": "Mon-Fri, 3-7pm (at bar)",
+    "oyster": "$1.50",
+    "deal": "$6–$8 drafts; $9–$14 wine",
+    "when": "Daily, 3-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "15:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7505, -73.9742]
   },
   {
     "id": "rokc",
     "name": "ROKC",
+    "city": "nyc",
     "address": "649 W 125th St, New York, NY 10027",
     "neighborhood": "West Harlem",
     "oyster": "~$1.75",
     "deal": "Full menu",
     "when": "Happy hour",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.8122, -73.9622]
   },
   {
     "id": "alison",
     "name": "Alison",
+    "city": "nyc",
     "address": "1858 1st Ave, New York, NY 10029",
     "neighborhood": "East Harlem",
     "oyster": "$1.50 each (min 6)",
     "deal": "",
     "when": "Happy hour",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7832, -73.9482]
   },
   {
     "id": "crave-fishbar-uws",
     "name": "Crave Fishbar (UWS)",
+    "city": "nyc",
     "address": "428 Amsterdam Ave, New York, NY 10024",
     "neighborhood": "Upper West Side",
     "oyster": "$1.50-$2",
     "deal": "Other food and drink HH deals",
     "when": "Daily, 4-6pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7852, -73.9742]
-  },
-  {
-    "id": "seamores-dumbo",
-    "name": "Seamore's (Dumbo)",
-    "address": "18 Old Fulton St, Brooklyn, NY 11201",
-    "neighborhood": "Dumbo",
-    "oyster": "Half off in basement bar (~$1.50)",
-    "deal": "",
-    "when": "Happy hour (basement bar)",
-    "coordinates": [40.7022, -73.9892]
   },
   {
     "id": "the-jeffrey",
     "name": "The Jeffrey",
+    "city": "nyc",
     "address": "311 E 59th St, New York, NY 10022",
     "neighborhood": "Midtown East",
     "oyster": "$1",
     "deal": "",
     "when": "Mon-Fri, 4-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7582, -73.9672]
   },
   {
     "id": "abigails",
     "name": "Abigail's",
+    "city": "nyc",
     "address": "2730 Broadway, New York, NY 10025",
     "neighborhood": "Upper West Side",
     "oyster": "12 for $12 + glass of wine",
     "deal": "",
     "when": "Happy hour",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7982, -73.9682]
   },
   {
     "id": "clover-club",
     "name": "Clover Club",
+    "city": "nyc",
     "address": "210 Smith St, Brooklyn, NY 11201",
-    "neighborhood": "Carroll Gardens",
-    "oyster": "$1",
-    "deal": "Acclaimed cocktails",
-    "when": "Happy hour",
+    "neighborhood": "Cobble Hill",
+    "oyster": "Half-price",
+    "deal": "$12 select cocktails; $6 select beer; $5 bar snacks",
+    "when": "Mon-Fri, 4-6pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-06",
     "coordinates": [40.6862, -73.9902]
   },
   {
     "id": "grey-lady",
     "name": "Grey Lady",
+    "city": "nyc",
     "address": "77 Delancey St, New York, NY 10002",
     "neighborhood": "Lower East Side",
     "oyster": "$1",
-    "deal": "BOGO martinis Thu",
-    "when": "Daily happy hour; all day Thu & Fri",
+    "deal": "$6 drafts; $9 wine",
+    "when": "Sun-Wed 4-7pm; Thu-Fri 1-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3], "start": "16:00", "end": "19:00" },
+      { "days": [4, 5], "start": "13:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7182, -73.9902]
   },
   {
     "id": "off-the-hook",
     "name": "Off the Hook",
+    "city": "nyc",
     "address": "32-02 30th Ave, Astoria, NY 11102",
     "neighborhood": "Astoria",
-    "oyster": "$1 during HH; $1 all night Mondays",
-    "deal": "",
-    "when": "Happy hour; Mon all night",
+    "oyster": "$2 oysters & clams; Mon all night",
+    "deal": "$5 off wine; $3 off cocktails; $2 off beer",
+    "when": "Mon, Wed-Fri 4-7pm; Sat-Sun 1-4pm (closed Tue)",
+    "schedule": [
+      { "days": [1], "start": "16:00", "end": "23:59" },
+      { "days": [3, 4, 5], "start": "16:00", "end": "19:00" },
+      { "days": [6, 0], "start": "13:00", "end": "16:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7702, -73.9182]
   },
   {
     "id": "mayfield",
     "name": "Mayfield",
+    "city": "nyc",
     "address": "688 Franklin Ave, Brooklyn, NY 11238",
     "neighborhood": "Crown Heights",
     "oyster": "$1.50",
     "deal": "$10 wine; $4 draft, $5 well drinks, $6 house wine",
     "when": "Daily, 5-6:30pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "17:00", "end": "18:30" }
+    ],
+    "verified": null,
     "coordinates": [40.6749, -73.9566]
   },
   {
     "id": "bar-crudo",
     "name": "Bar Crudo",
+    "city": "nyc",
     "address": "412 5th Ave, Brooklyn, NY 11215",
     "neighborhood": "Park Slope",
     "oyster": "$1 (oysters and clams)",
     "deal": "",
     "when": "Daily, 4-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.6662, -73.9842]
   },
   {
     "id": "diamond-lil",
     "name": "Diamond Lil",
+    "city": "nyc",
     "address": "179 Nassau Ave, Brooklyn, NY 11222",
     "neighborhood": "Greenpoint",
     "oyster": "$1.50 (from Greenpoint Fish & Lobster)",
     "deal": "$10 wine",
     "when": "Mon-Fri, 4-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7242, -73.9502]
   },
   {
     "id": "lighthouse",
     "name": "Lighthouse",
+    "city": "nyc",
     "address": "145 Borinquen Pl, Brooklyn, NY 11211",
     "neighborhood": "Williamsburg",
     "oyster": "$1",
-    "deal": "",
-    "when": "Daily, 5-6pm",
+    "deal": "$10 cocktails; $10 wine; $40 carafe",
+    "when": "Mon-Fri 5-6pm; Sat-Sun 4-6pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "18:00" },
+      { "days": [6, 0], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7082, -73.9482]
   },
   {
     "id": "ostrica",
     "name": "Ostrica",
+    "city": "nyc",
     "address": "530 2nd Ave, New York, NY 10016",
     "neighborhood": "Murray Hill",
     "oyster": "$1.50",
     "deal": "$6 beer; $8 wine; $10 cocktails",
     "when": "Happy hour (daily)",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7412, -73.9782]
   },
   {
     "id": "essex-pearl",
     "name": "Essex Pearl",
+    "city": "nyc",
     "address": "88 Essex St, Essex Market, New York, NY 10002",
     "neighborhood": "Lower East Side",
     "oyster": "$1 ($6 half dozen, $12 dozen)",
     "deal": "Discounted small plates and cocktails",
     "when": "Mon-Fri, 5-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7192, -73.9892]
   },
   {
     "id": "burger-and-lobster",
     "name": "Burger & Lobster (Flatiron)",
-    "address": "39 W 19th St, New York, NY 10011",
-    "neighborhood": "Flatiron",
-    "oyster": "$1",
-    "deal": "$6 cocktails (Flatiron location may be closed; Bryant Park at 132 W 43rd St is open)",
-    "when": "Happy hour",
-    "coordinates": [40.7402, -73.9932]
+    "city": "nyc",
+    "address": "132 W 43rd St, New York, NY 10036",
+    "neighborhood": "Midtown",
+    "oyster": "$1.50 East Coast",
+    "deal": "$10 cocktails (Shell & Sip)",
+    "when": "Mon-Fri, 3-6pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "15:00", "end": "18:00" }
+    ],
+    "verified": null,
+    "coordinates": [40.7558, -73.9846]
   },
   {
     "id": "calle-dao",
     "name": "Calle Dao",
+    "city": "nyc",
     "address": "38 W 39th St, New York, NY 10018",
     "neighborhood": "Bryant Park",
     "oyster": "$2 (min 6)",
     "deal": "Cuban-Chinese fusion",
     "when": "Daily, 4-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7522, -73.9842]
   },
   {
     "id": "jane-hotel",
     "name": "The Jane Hotel Bar",
+    "city": "nyc",
     "address": "113 Jane St, New York, NY 10014",
     "neighborhood": "West Village",
     "oyster": "$1 all the time",
     "deal": "$7 wine at happy hour",
     "when": "Oysters anytime; happy hour for drinks",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7382, -74.0072]
   },
   {
     "id": "gilligans",
     "name": "Gilligan's NYC",
+    "city": "nyc",
     "address": "310 West Broadway, New York, NY 10013",
     "neighborhood": "SoHo",
     "oyster": "$2 East Coast",
     "deal": "$12 cocktails, pizzas, wine; Mon all-day HH",
     "when": "Daily 3-6pm (seasonal May–Sept)",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "15:00", "end": "18:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7192, -74.0082]
   },
   {
     "id": "roxy-bar",
-    "name": "Roxy Bar",
+    "name": "The Oyster Bar at The Roxy",
+    "city": "nyc",
     "address": "2 Avenue of the Americas, New York, NY 10013",
     "neighborhood": "Tribeca",
-    "oyster": "$2",
-    "deal": "$5 beers; live jazz",
-    "when": "Daily 4-6pm; Mon all-day happy hour",
+    "oyster": "$1.50 East Coast",
+    "deal": "$5 Sly Fox pilsner; $10 wine",
+    "when": "Mon all night; Tue-Sun 4-6pm",
+    "schedule": [
+      { "days": [1], "start": "16:00", "end": "23:59" },
+      { "days": [2, 3, 4, 5, 6, 0], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7232, -74.0052]
   },
   {
     "id": "grand-central-oyster-bar",
     "name": "Grand Central Oyster Bar",
+    "city": "nyc",
     "address": "89 E 42nd St, Grand Central Terminal, New York, NY 10017",
     "neighborhood": "Midtown East",
-    "oyster": "$1.25",
-    "deal": "30+ varieties; historic landmark",
-    "when": "Mon-Fri 4:30-6:30pm (closed Sat-Sun)",
+    "oyster": "Happy hour pricing unconfirmed",
+    "deal": "30+ varieties; historic landmark (no current HH found)",
+    "when": "Closed Sat-Sun — call ahead",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7526, -73.9772]
   },
   {
     "id": "390-social",
     "name": "390 Social",
+    "city": "nyc",
     "address": "390 5th Ave, Brooklyn, NY 11215",
     "neighborhood": "Park Slope",
     "oyster": "$1.50 Bar Crudo (NJ), by the piece",
     "deal": "",
     "when": "Mon-Fri & Sun, 4-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.6662, -73.9842]
   },
   {
     "id": "sereneco",
     "name": "Sereneco",
+    "city": "nyc",
     "address": "113 Franklin St, Brooklyn, NY 11222",
     "neighborhood": "Greenpoint",
     "oyster": "$2",
     "deal": "",
     "when": "Mon-Thu 4-7pm, Fri-Sun 4-6pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4], "start": "16:00", "end": "19:00" },
+      { "days": [5, 6, 0], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7322, -73.9582]
   },
   {
     "id": "red-hook-lobster-pound",
     "name": "Red Hook Lobster Pound",
+    "city": "nyc",
     "address": "284 Van Brunt St, Brooklyn, NY 11231",
     "neighborhood": "Red Hook",
     "oyster": "$1 Chef's Choice",
     "deal": "$5 beer/rosé/Chardonnay; $10 frosé",
     "when": "Mon-Fri, 4-6pm (dine-in only)",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": null,
     "coordinates": [40.6752, -74.0092]
   },
   {
     "id": "arden",
     "name": "Arden",
+    "city": "nyc",
     "address": "788 Franklin Ave, Brooklyn, NY 11238",
     "neighborhood": "Crown Heights",
     "oyster": "$2",
     "deal": "",
     "when": "Tue-Sun, 5-7pm",
+    "schedule": [
+      { "days": [2, 3, 4, 5, 6, 0], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.6732, -73.9572]
   },
   {
     "id": "beast-next-door",
     "name": "The Beast Next Door",
+    "city": "nyc",
     "address": "42-51 27th St, Long Island City, NY 11101",
     "neighborhood": "Long Island City",
     "oyster": "$1 (with drink purchase, max 12/person)",
     "deal": "$2 off cocktails; $5 Narragansett; $10 house wine",
     "when": "Sun-Fri, 4-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7482, -73.9422]
   },
   {
     "id": "american-brass",
     "name": "American Brass",
+    "city": "nyc",
     "address": "2-01 50th Ave, Long Island City, NY 11109",
     "neighborhood": "Long Island City",
     "oyster": "$1.50 East Coast",
     "deal": "$13 cocktails; $11 wine; $6 beer; snacks available",
     "when": "Sun-Fri (all-night HH pricing at bar)",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.7432, -73.9582]
   },
   {
     "id": "on-the-7",
     "name": "On the 7",
+    "city": "nyc",
     "address": "50-04 Vernon Blvd, Long Island City, NY 11101",
     "neighborhood": "Long Island City",
     "oyster": "$2",
     "deal": "$5 beer, $8 wine at happy hour; live jazz",
     "when": "Daily, 5-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7442, -73.9542]
   },
   {
     "id": "oyster-house-philly",
     "name": "Oyster House",
+    "city": "philadelphia",
     "address": "1516 Sansom St, Philadelphia, PA 19102",
     "neighborhood": "Center City",
     "oyster": "$2",
-    "deal": "$5 oyster shooters; $7 punch",
+    "deal": "Snack & drink specials",
     "when": "Tue-Fri, 4-6pm (bar only)",
+    "schedule": [
+      { "days": [2, 3, 4, 5], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-10",
     "coordinates": [39.9505, -75.1665]
   },
   {
     "id": "pearl-and-mary-philly",
     "name": "Pearl & Mary",
+    "city": "philadelphia",
     "address": "114 S 13th St, Philadelphia, PA 19107",
     "neighborhood": "Midtown Village",
     "oyster": "$2",
-    "deal": "$1 clams casino; $7 crudo; $4 fries; $7 gimlet; $6 wine",
+    "deal": "$1 clams; $7 cocktails; $6 wine; $5 beer; $7 smash burger; $4 fries",
     "when": "Daily, 4-7pm (bar & raw bar only)",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": "2026-10",
     "coordinates": [39.9497, -75.1622]
   },
   {
     "id": "bloomsday-cafe-philly",
     "name": "Bloomsday Cafe",
+    "city": "philadelphia",
     "address": "414 S 2nd St, Philadelphia, PA 19147",
     "neighborhood": "Society Hill",
     "oyster": "$1.50",
     "deal": "$16 tinned fish & sherry; $6 smash burger",
     "when": "Wed-Fri, 5-6pm",
+    "schedule": [
+      { "days": [3, 4, 5], "start": "17:00", "end": "18:00" }
+    ],
+    "verified": "2026-07",
     "coordinates": [39.9441, -75.1432]
   },
   {
     "id": "pj-clarkes-philly",
     "name": "P.J. Clarke's",
+    "city": "philadelphia",
     "address": "601 Walnut St, Philadelphia, PA 19106",
     "neighborhood": "Washington Square West",
     "oyster": "$6 half-dozen; $12 dozen",
     "deal": "",
     "when": "Weekdays, 5-7pm (bar & lounge)",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [39.9482, -75.1522]
-  },
-  {
-    "id": "kensington-quarters-philly",
-    "name": "Kensington Quarters",
-    "address": "1310 Frankford Ave, Philadelphia, PA 19125",
-    "neighborhood": "Fishtown",
-    "oyster": "$2",
-    "deal": "$8 wine of the day; sangria",
-    "when": "Mon-Fri & Sun, 5-6:30pm",
-    "coordinates": [39.9758, -75.1302]
   },
   {
     "id": "wilder-philly",
     "name": "Wilder",
+    "city": "philadelphia",
     "address": "2009 Sansom St, Philadelphia, PA 19103",
     "neighborhood": "Center City",
-    "oyster": "$2",
-    "deal": "$8 vinho verde; $9 rum cocktail",
-    "when": "Mon-Fri, 4:30-6:30pm",
+    "oyster": "$2 Chef's Choice",
+    "deal": "$9 cocktails; $8 wine; $5 beer; $12 pizza",
+    "when": "Mon-Fri, 4:30-6:30pm (bar, lounge & outside)",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:30", "end": "18:30" }
+    ],
+    "verified": "2026-10",
     "coordinates": [39.9512, -75.1735]
   },
   {
     "id": "royal-boucherie-philly",
     "name": "Royal Boucherie",
+    "city": "philadelphia",
     "address": "52 S 2nd St, Philadelphia, PA 19106",
     "neighborhood": "Old City",
-    "oyster": "$12 half-dozen ($15 with sparkling wine)",
-    "deal": "",
-    "when": "Weekdays, 4-6pm",
+    "oyster": "$2; 6 + glass of sparkling $15",
+    "deal": "$7 house wine; $5 drafts; $10 cocktails; $7 short-rib sliders",
+    "when": "Wed-Fri, 4-6pm",
+    "schedule": [
+      { "days": [3, 4, 5], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-10",
     "coordinates": [39.9494, -75.1438]
   },
   {
     "id": "devon-seafood-philly",
     "name": "Devon Seafood Grill",
+    "city": "philadelphia",
     "address": "225 S 18th St, Philadelphia, PA 19103",
     "neighborhood": "Rittenhouse",
     "oyster": "$15 half-dozen",
     "deal": "$5 beer; $8 wine; $11 cocktails",
     "when": "Mon-Thu, 4-6:30pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4], "start": "16:00", "end": "18:30" }
+    ],
+    "verified": null,
     "coordinates": [39.9496, -75.1742]
   },
   {
     "id": "the-wayward-philly",
     "name": "The Wayward",
+    "city": "philadelphia",
     "address": "1170 Ludlow St, Philadelphia, PA 19107",
     "neighborhood": "Center City",
     "oyster": "$14 half-dozen",
     "deal": "Salmon rillettes; gin cocktails",
     "when": "Weekdays, 5-7pm (bar & lounge)",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": "2026-07",
     "coordinates": [39.9513, -75.1558]
-  },
-  {
-    "id": "ember-and-ash-philly",
-    "name": "Ember & Ash",
-    "address": "1520 E Passyunk Ave, Philadelphia, PA 19147",
-    "neighborhood": "East Passyunk",
-    "oyster": "$10 half-dozen",
-    "deal": "$1 off draft beer; $2 off wine by the glass; $6 prosecco",
-    "when": "Mon-Fri, 5-7pm",
-    "coordinates": [39.9342, -75.1682]
   },
   {
     "id": "muddy-waters-pgh",
     "name": "Muddy Waters Oyster Bar",
+    "city": "pittsburgh",
     "address": "130 S Highland Ave, Pittsburgh, PA 15206",
     "neighborhood": "East Liberty",
-    "oyster": "HH: White Stone $10/half-dozen; East & West Coast $15/half-dozen (~$2.50 ea)",
-    "deal": "$7 Don Wayne & Hurricane; $8 boilermakers; $10–$20 off bottles of bubbles; bites $5–$12",
+    "oyster": "$1.50 house; $2.50 featured East & West Coast",
+    "deal": "$20 off bottles of champagne; drink specials",
     "when": "Tue-Fri, 4:30-6:30pm (bar & dining room)",
+    "schedule": [
+      { "days": [2, 3, 4, 5], "start": "16:30", "end": "18:30" }
+    ],
+    "verified": "2025",
     "coordinates": [40.461, -79.9252]
   },
   {
     "id": "eleven-pgh",
     "name": "Eleven",
+    "city": "pittsburgh",
     "address": "1150 Smallman St, Pittsburgh, PA 15222",
     "neighborhood": "Strip District",
     "oyster": "$21/dozen; $42/two dozen",
     "deal": "Tavern menu at bar",
     "when": "Mon-Fri, 4:30-6pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:30", "end": "18:00" }
+    ],
+    "verified": null,
     "coordinates": [40.4505, -79.9825]
   },
   {
     "id": "the-warren-pgh",
     "name": "The Warren Bar and Burrow",
+    "city": "pittsburgh",
     "address": "245 7th St, Pittsburgh, PA 15222",
     "neighborhood": "Downtown / Cultural District",
     "oyster": "Tue: $40 bottle of champagne + signature oysters",
     "deal": "Sushi, craft cocktails, wine",
     "when": "Open daily from 4pm; Tue oyster & champagne deal",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.4435, -79.9965]
   },
   {
     "id": "penn-ave-fish-pgh",
     "name": "Penn Avenue Fish Company",
+    "city": "pittsburgh",
     "address": "2208 Penn Ave, Pittsburgh, PA 15222",
     "neighborhood": "Strip District",
     "oyster": "$1",
     "deal": "BYOB; seafood market, sandwiches, sushi",
     "when": "Wed-Sat, 3-5pm",
+    "schedule": [
+      { "days": [3, 4, 5, 6], "start": "15:00", "end": "17:00" }
+    ],
+    "verified": null,
     "coordinates": [40.4525, -79.9765]
   },
   {
     "id": "gandy-dancer-pgh",
     "name": "Gandy Dancer Saloon",
+    "city": "pittsburgh",
     "address": "100 W Station Square Dr, Pittsburgh, PA 15219",
     "neighborhood": "Station Square",
     "oyster": "$9 for 3 East Coast oysters on half shell",
     "deal": "$8 cocktails; $5 well spirits; $11 wine; $5.25 drafts; other HH bites $9–$16",
     "when": "Mon-Fri, 3:30-6:30pm (bar/lounge & patio only)",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "15:30", "end": "18:30" }
+    ],
+    "verified": null,
     "coordinates": [40.4345, -80.0235]
   },
   {
     "id": "original-oyster-house-pgh",
     "name": "The Original Oyster House",
+    "city": "pittsburgh",
     "address": "20 Market Square, Pittsburgh, PA 15222",
     "neighborhood": "Downtown / Market Square",
     "oyster": "Shooters: 3 for $10.99, 6 for $17.99; breaded $2.99 each; lightly breaded $10.99",
     "deal": "Historic since 1870; fish sandwiches, crab cakes, clam chowder",
     "when": "Wed-Fri 11am-7pm, Sat 12-8pm (closed Sun-Tue)",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.4405, -79.9935]
   },
   {
     "id": "off-the-hook-warrendale",
     "name": "Off The Hook",
+    "city": "pittsburgh",
     "address": "908 Warrendale Village Dr, Warrendale, PA 15086",
     "neighborhood": "Warrendale",
     "oyster": "$1 East Coast; $2 West Coast",
     "deal": "Wine-by-the-glass program; bar specials",
     "when": "Tue-Fri 4:30-6:30pm; Tue 9-11pm (late night); Sat 11am-1pm (brunch)",
+    "schedule": [
+      { "days": [2, 3, 4, 5], "start": "16:30", "end": "18:30" }
+    ],
+    "verified": null,
     "coordinates": [40.6476, -80.0858]
   },
   {
     "id": "luke-wholeys",
     "name": "Luke Wholey's Wild Alaskan Grille",
+    "city": "pittsburgh",
     "address": "2106 Penn Ave, Pittsburgh, PA 15222",
     "neighborhood": "Strip District",
     "oyster": "$2 Blue Point (call to confirm HH pricing)",
     "deal": "Half-off select appetizers; discounted beers",
     "when": "Tue-Thu 12-8:30pm, Fri-Sat 11am-10pm, Sun 11am-6pm",
+    "schedule": [],
+    "verified": null,
     "coordinates": [40.4467, -79.9866]
   },
   {
     "id": "mccormick-schmicks-pgh",
     "name": "McCormick & Schmick's",
+    "city": "pittsburgh",
     "address": "301 5th Ave, Piatt Place, Pittsburgh, PA 15222",
     "neighborhood": "Downtown",
     "oyster": "Oysters in bar from 3pm (call to confirm HH price)",
     "deal": "Bar bites and cocktail specials",
     "when": "Daily, 4-6:30pm (bar and lounge only)",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4, 5, 6], "start": "16:00", "end": "18:30" }
+    ],
+    "verified": null,
     "coordinates": [40.4408, -79.9981]
   },
   {
     "id": "lure-fishbar",
     "name": "Lure Fishbar",
+    "city": "nyc",
     "address": "142 Mercer St, New York, NY 10012",
     "neighborhood": "SoHo",
     "oyster": "~$1.50–$2 rotating East and West Coast",
     "deal": "$10 cocktails; $8 wine; $6 beer",
     "when": "Mon-Fri, 5-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7237, -74.0001]
   },
   {
     "id": "jeffreys-grocery",
     "name": "Jeffrey's Grocery",
+    "city": "nyc",
     "address": "172 Waverly Pl, New York, NY 10014",
     "neighborhood": "West Village",
-    "oyster": "~$1.50 (snack menu 4-6pm daily)",
-    "deal": "Full bar; daily specials",
-    "when": "Mon-Fri, 3:30-5:30pm",
+    "oyster": "$1.50",
+    "deal": "No drink specials",
+    "when": "Mon-Fri, 3:30-5:30pm (not holidays)",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "15:30", "end": "17:30" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.7342, -74.0027]
   },
   {
     "id": "the-clam",
     "name": "The Clam",
+    "city": "nyc",
     "address": "420 Hudson St, New York, NY 10014",
     "neighborhood": "West Village",
     "oyster": "$2",
     "deal": "$10–$12 cocktails; $8 wine; $5 Narragansett lager",
     "when": "Tue-Sat, 4-7pm",
+    "schedule": [
+      { "days": [2, 3, 4, 5, 6], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7308, -74.0065]
   },
   {
     "id": "grand-army",
     "name": "Grand Army",
+    "city": "nyc",
     "address": "336 State St, Brooklyn, NY 11217",
     "neighborhood": "Boerum Hill",
     "oyster": "Dozen for $25",
     "deal": "$1 off glasses of wine and beer",
     "when": "Mon-Thu 5-7pm; Fri 4-6pm; Sat-Sun 2-4pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4], "start": "17:00", "end": "19:00" },
+      { "days": [5], "start": "16:00", "end": "18:00" },
+      { "days": [6, 0], "start": "14:00", "end": "16:00" }
+    ],
+    "verified": null,
     "coordinates": [40.6861, -73.9903]
   },
   {
     "id": "pineapple-club",
     "name": "Pineapple Club",
+    "city": "nyc",
     "address": "509 E 6th St, New York, NY 10009",
     "neighborhood": "East Village",
     "oyster": "$1 Mondays; dozen + bottle of wine $40",
     "deal": "Tiki cocktails; HH specials Tue-Thu 5-6:30pm, Fri 4-6pm",
     "when": "Mon 5-11pm (oyster special); Tue-Thu 5-6:30pm; Fri 4-6pm",
+    "schedule": [
+      { "days": [1], "start": "17:00", "end": "23:59" },
+      { "days": [2, 3, 4], "start": "17:00", "end": "18:30" },
+      { "days": [5], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7243, -73.9824]
   },
   {
     "id": "sanfords-astoria",
     "name": "Sanfords",
+    "city": "nyc",
     "address": "30-13 Broadway, Astoria, NY 11106",
     "neighborhood": "Astoria",
     "oyster": "$1 (whisky bar)",
     "deal": "$6 wines; $6 select bourbons/whiskeys",
     "when": "Daily 4-7pm (whisky bar); Mon-Fri extended to 8pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "20:00" },
+      { "days": [6, 0], "start": "16:00", "end": "19:00" }
+    ],
+    "verified": null,
     "coordinates": [40.7726, -73.9297]
   },
   {
     "id": "brooklyn-crab",
     "name": "Brooklyn Crab",
+    "city": "nyc",
     "address": "24 Reed St, Brooklyn, NY 11231",
     "neighborhood": "Red Hook",
-    "oyster": "$1 (bar area only)",
-    "deal": "$5 beers; $8 margaritas; $3 off cocktails; $10 peel-and-eat shrimp",
-    "when": "Wed-Fri, 4-6pm (bar area only)",
+    "oyster": "$1",
+    "deal": "$6 beer; $10 margaritas; $3 off specialty cocktails; $10 peel-and-eat shrimp",
+    "when": "Mon-Fri, 3-6pm (not on holidays)",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "15:00", "end": "18:00" }
+    ],
+    "verified": "2026-08",
     "coordinates": [40.6754, -74.0165]
+  },
+  {
+    "id": "otb",
+    "name": "OTB",
+    "city": "nyc",
+    "address": "141 Broadway, Brooklyn, NY 11211",
+    "neighborhood": "Williamsburg",
+    "oyster": "$9 half-dozen (~$1.50 ea)",
+    "deal": "$9 beer + shot; $12 martinis & margaritas; $6 hot dog",
+    "when": "Mon-Fri 4-6pm; Sat-Sun 12-4pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "18:00" },
+      { "days": [6, 0], "start": "12:00", "end": "16:00" }
+    ],
+    "verified": "2026-08",
+    "coordinates": [40.7105, -73.9634]
+  },
+  {
+    "id": "walters",
+    "name": "Walter's",
+    "city": "nyc",
+    "address": "166 DeKalb Ave, Brooklyn, NY 11217",
+    "neighborhood": "Fort Greene",
+    "oyster": "$1.75; dozen + bottle of Muscadet $50",
+    "deal": "$9 wine; $5 Carlsberg; $10 spritz",
+    "when": "Mon-Thu, 4-6pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-08",
+    "coordinates": [40.6895, -73.9733]
+  },
+  {
+    "id": "lowerline",
+    "name": "Lowerline",
+    "city": "nyc",
+    "address": "794 Washington Ave, Brooklyn, NY 11238",
+    "neighborhood": "Prospect Heights",
+    "oyster": "Half-off ($12 for six)",
+    "deal": "Po'boys; Hurricanes",
+    "when": "Mon-Fri, 5-7pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": "2026-05",
+    "coordinates": [40.6742, -73.9634]
+  },
+  {
+    "id": "jr-and-son",
+    "name": "Jr & Son",
+    "city": "nyc",
+    "address": "575 Lorimer St, Brooklyn, NY 11211",
+    "neighborhood": "Williamsburg",
+    "oyster": "Half-off oysters & clams (late night)",
+    "deal": "$10 'tinis, dirty or dry",
+    "when": "Sun-Thu, 9pm-close",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4], "start": "21:00", "end": "23:59" }
+    ],
+    "verified": "2026-05",
+    "coordinates": [40.7142, -73.9496]
+  },
+  {
+    "id": "layla",
+    "name": "Layla",
+    "city": "nyc",
+    "address": "352 Bedford Ave, Brooklyn, NY 11249",
+    "neighborhood": "Williamsburg",
+    "oyster": "$2",
+    "deal": "$12 Negronis, martinis & spritzes; $6 drafts",
+    "when": "Mon-Fri, 4-6pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4, 5], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-06",
+    "coordinates": [40.7123, -73.963]
+  },
+  {
+    "id": "miladys",
+    "name": "Milady's",
+    "city": "nyc",
+    "address": "160 Prince St, New York, NY 10012",
+    "neighborhood": "SoHo",
+    "oyster": "$12 half-dozen; $24 dozen",
+    "deal": "$12–$14 select cocktails; discounted wine bottles",
+    "when": "Mon-Thu, 4-6pm",
+    "schedule": [
+      { "days": [1, 2, 3, 4], "start": "16:00", "end": "18:00" }
+    ],
+    "verified": "2026-05",
+    "coordinates": [40.7259, -74.0014]
+  },
+  {
+    "id": "bathtub-gin",
+    "name": "Bathtub Gin",
+    "city": "nyc",
+    "address": "132 9th Ave, New York, NY 10011",
+    "neighborhood": "Chelsea",
+    "oyster": "$2 (Golden Hour)",
+    "deal": "$14 gin & tonics",
+    "when": "Sun-Thu, 5-7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4], "start": "17:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
+    "coordinates": [40.7436, -74.0031]
+  },
+  {
+    "id": "lamonte",
+    "name": "Lamonte",
+    "city": "nyc",
+    "address": "557 Driggs Ave, Brooklyn, NY 11211",
+    "neighborhood": "Williamsburg",
+    "oyster": "$2.50 (6 min)",
+    "deal": "$10 martinis; $10 bubbles (order food with drinks)",
+    "when": "Sun-Thu all day; Fri-Sat until 7pm",
+    "schedule": [
+      { "days": [0, 1, 2, 3, 4], "start": "12:00", "end": "23:59" },
+      { "days": [5, 6], "start": "12:00", "end": "19:00" }
+    ],
+    "verified": "2026-08",
+    "coordinates": [40.7169, -73.9566]
   }
 ]
